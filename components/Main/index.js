@@ -1,9 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-const Main = () => {
+const Main = ({showUseDrop, setShowUseDrop}) => {
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains('usecase')) {
+      setShowUseDrop(false)
+    }
+    else{
+      setShowUseDrop(true)
+    }
+  };
   return (
-    <main>
+    <main onMouseOver={handleSubmenu}>
       <div className="relative bg-[#19181A] text-white pt-20 md:pt-28 md:pb-20 lg:pb-0 px-8 md:px-16 lg:px-28 2xl:px-44 pb-0 font-Poppins overflow-hidden">
         <div className="gradient w-44 md:w-[400px] h-2/3"></div>
         <div className="gradient2 w-44 md:w-96 h-full"></div>
