@@ -14,14 +14,14 @@ const People = () => {
       name: "Karla Deras",
       img: "/images/people_2.svg",
       words:
-        "LUCY has improved our hiring process from the get-go. We can now free up time to focus on the things that matter, the people.",
+        "“LUCY has improved our hiring process from the get-go. We can now free up time to focus on the things that matter, the people.”",
       post: "Recruiter",
     },
     {
       name: "Jorge Diaz Largo",
       img: "/images/people_3.svg",
       words:
-        "We have a professional careers page that I can share with everyone. LUCY has solved our hiring problems and we couldn’t be happier with it.",
+        "“We have a professional careers page that I can share with everyone. LUCY has solved our hiring problems and we couldn’t be happier with it.”",
       post: "CEO",
     },
   ];
@@ -45,9 +45,9 @@ const People = () => {
     // };
   }, [index]);
   return (
-    <div className="section-center h-[90vh] md:h-[70vh]  flex justify-center items-center ">
+    <div className="section-center h-[60vh] md:h-[70vh]  flex justify-center items-center ">
       <div className="absolute top-10 left-10 md:left-52 xl:left-96  xl:top-10">
-        <h1 className="font-semibold text-3xl md:text-4xl ">
+        <h1 className="font-semibold  text-3xl md:text-4xl ">
           People sweet words
         </h1>
       </div>
@@ -79,8 +79,8 @@ const People = () => {
                 <h4 className="font-semibold italic">{name}</h4>
               </div>
             </div>
-            <div className="text-start  py-10 px-6 md:px-10  ">
-              <p className="font-semibold text-base md:text-lg ">{words}</p>
+            <div className="text-start  py-10 px-4 md:px-10  ">
+              <p className="font-medium md:font-semibold text-sm md:text-lg ">{words}</p>
             </div>
             <div className="absolute right-10 bottom-4 text-start hidden md:flex">
               <p className=" text-gray-400 font-semibold">{post}</p>

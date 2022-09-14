@@ -25,6 +25,7 @@
 
 @tailwind utilities;
 
+/* Recruiment section images */
 .bg-img-dashboard{
   background: url("/images/dashboard_1.svg");
   background-size: contain;
@@ -45,6 +46,8 @@
   max-width: 100%;
   width: 100%;
 }
+
+/* For gradient backgrounds */
 .gradient {
   position: absolute;
   left: 0;
@@ -92,7 +95,6 @@ a {
 }
 
 .article {
-
   opacity: 0;
   transition: .3s all;
 }

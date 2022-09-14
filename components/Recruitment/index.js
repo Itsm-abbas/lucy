@@ -59,7 +59,7 @@ const Recruitment = () => {
               alt="player"
             />
           </div>
-          <div className="flex justify-center items-center absolute left-4 bottom-1 md:bottom-2 lg:bottom-8 px-4 py-1 md:py-2 rounded-3xl bg-[#69696999]">
+          <div className="flex justify-center items-center absolute left-4 bottom-1 md:bottom-2 lg:bottom-8 px-2 md:px-4 py-1 md:py-2 rounded-3xl bg-[#69696999]">
             <img
             
               className="rounded-full w-7 h-7 md:w-11 md:h-11"
@@ -217,7 +217,7 @@ const Recruitment = () => {
       <div className="pt-40 grid lg:grid-cols-2 relative">
         {/* gradient */}
         <div className="gradient2 h-full w-96 "></div>
-        <div className="pb-20">
+        <div className="pb-20 ">
           <h2 className="text-3xl mb-6 text-black">
             Automated recruiting process help you to focus on what matters the
             most
@@ -229,20 +229,17 @@ const Recruitment = () => {
           <button className="btn-black px-6">Try Lucy Free</button>
         </div>
         <div className="relative max-w-sm flex justify-start">
-          <div className="h-full ">
-            <Image
-              className="z-10 "
+          <div className="h-full flex">
+            <img
+              className="z-10 w-[270px] h-[290px]  md:w-[335px] md:h-[360px]"
               src={"/images/mbl-img.svg"}
-              width={335}
-              height={340}
               alt="mbl-img"
             />
           </div>
-          <div className="absolute -top-4 -right-32 lg:-right-32 ">
-            <Image
+          <div className="absolute -top-4 -right-16 md:-right-40 lg:-right-30 ">
+            <img
+            className="w-[270px] h-[270px] md:w-[335px] md:h-[360px]"
               src={"/images/mbl-img_2.svg"}
-              width={335}
-              height={340}
               alt="mbl-img"
             />
           </div>

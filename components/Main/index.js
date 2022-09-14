@@ -31,10 +31,10 @@ const Main = () => {
           </div>
         </div>
       </div>
-
-      <div className="grid md:grid-cols-5 gap-12 md:gap-20 pl-8  md:pl-20 py-28 2xl:pl-40 font-Poppins">
+{/* **** */}
+      <div className="grid md:grid-cols-5 gap-12 md:gap-20 pl-6  md:pl-20 py-20 lg:py-28 2xl:pl-40 font-Poppins">
         <div className="pr-8 md:pr-0 md:col-span-2">
-          <p className="text-3xl md:text-4xl text-[#191919] font-semibold ">
+          <p className="text-2xl md:text-3xl lg:4xl text-[#191919] font-semibold ">
             Trusted by forward-thinking companies who value ease of use over
             complexity
           </p>
@@ -45,6 +45,8 @@ const Main = () => {
               "/images/main-img_3.svg",
               "/images/main-img_4.svg",
               "/images/main-img_5.svg",
+              "/images/main-img_11.svg",
+              "/images/main-img_12.svg",
             ].map((src) => (
               <div
                 key={src}

@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="w-full flex justify-center items-center bg-[#191919] text-white  font-Poppins ">
-        <div className="text-center py-28">
-          <h1 className="text-4xl font-semibold mb-10">
+        <div className="text-center py-28 px-1 md:px-0">
+          <h1 className="text-3xl md:text-4xl font-semibold mb-10">
             Get started with Lucy
           </h1>
           <p className="mb-10">
