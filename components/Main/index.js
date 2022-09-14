@@ -17,7 +17,7 @@ const Main = () => {
             </p>
             <button className="btn-green shadow-md px-10">Try Lucy Free</button>
           </div>
-          <div className="relative w-96 h-96  ">
+          <div className="relative w-80 h-[380px] md:w-96 md:h-96  ">
             <div className="absolute right-24 lg:right-52 top-8 md:top-14 lg:-top-8 h-full w-full">
               <iframe
                 className="bg-transparent"

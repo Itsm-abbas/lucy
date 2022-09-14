@@ -99,6 +99,9 @@ a {
   transition: .3s all;
 }
 
+.nowPlayingTitle {
+  font-size: 3rem;
+}
 
 
 

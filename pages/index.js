@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Expert from "../components/Expert";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hire from "../components/Hire";
@@ -19,6 +20,7 @@ export default function Home() {
       <Recruitment />
       <Hire />
       <People />
+      <Expert/>
       <Footer />
     </div>
   );
