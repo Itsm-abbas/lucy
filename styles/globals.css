@@ -1,9 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+.btn-green {
+  @apply capitalize rounded-md p-3 bg-green text-black;
+}
+
+.btn-black {
+  @apply capitalize rounded-md p-3 bg-[#191919] text-white;
+}
+
+.btn-white {
+  @apply capitalize rounded-md py-3 px-5 font-semibold bg-white text-black;
+}
+
+.btn-transparent {
+  @apply capitalize rounded-md p-3;
+}
+
+.anchor-hover {
+  @apply hover:text-green transition-all duration-200;
+}
+
+@tailwind utilities;
+
+.bg-img-dashboard{
+  background: url("/images/dashboard_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  width: 100%;
+}
+.bg-img-chat{
+  border-radius: 2rem;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-left: 10px solid black;
+  background: url("/images/chat-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-width: 100%;
+  width: 100%;
+}
+.gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 191, 138, 0.4);
+  filter: blur(191px);
+  transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0);
+}
+
+.gradient2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  background: rgba(0, 191, 138, 0.2);
+  filter: blur(191px);
+  transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0);
+
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -15,12 +82,50 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Slider css */
+.section-center {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.article {
+
+  opacity: 0;
+  transition: .3s all;
+}
+
+
+
+
+
+
+
+
+.activeSlide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.lastSlide {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.nextSlide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
-}
+} */
