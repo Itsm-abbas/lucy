@@ -45,58 +45,56 @@ const Recruitment = () => {
       </div>
       {/* First slide */}
       {interview && <div className="relative  bg-white border-t-8 border-r-8 border-l-8 h-full border-black border-solid  rounded-2xl w-full px-5 md:px-16 pt-12 ">
-        <div className="absolute -right-10 top-60 md:-top-8 z-10">
+        <div className="absolute -right-10 top-60 lg:-top-8 z-10">
           <img
-            className="rounded-xl w-48 h-28 md:w-80 md:h-48 lg:w-[350px] lg:h-52 xl:w-[450px] xl:h-64"
+            className="rounded-xl w-48 h-full lg:w-80  lg:w-[350px]  xl:w-[450px]"
             src={"/images/main-img_7.svg"}
             alt="img"
           />
           <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Image
+          <img
+            className="w-5 h-full lg:w-8 "
               src={"/images/player-icon.svg"}
-              width={30}
-              height={30}
               alt="player"
             />
           </div>
-          <div className="flex justify-center items-center absolute left-4 bottom-1 md:bottom-2 lg:bottom-8 px-2 md:px-4 py-1 md:py-2 rounded-3xl bg-[#69696999]">
+          <div className="flex justify-center items-center absolute left-0 md:left-4 bottom-1  lg:bottom-3 px-2 lg:px-4 py-1 md:py-2 rounded-3xl bg-[#69696999]">
             <img
             
-              className="rounded-full w-7 h-7 md:w-11 md:h-11"
+              className="rounded-full w-7 h-full lg:w-11 "
               src={"/images/small-img.svg"}
 
               alt={"small"}
-            />x``
+            />
             <div className="flex flex-col text-white ml-1 lg:ml-3">
-              <h2 className="text-[6px] md:text-xs font-medium">Andrexa Davis</h2>
-              <p className="text-[6px] md:text-[6px] font-light">Graphic Designer</p>
+              <h2 className="text-[6px] lg:text-xs font-medium">Andrexa Davis</h2>
+              <p className="text-[6px] lg:text-[6px] font-light">Graphic Designer</p>
 
             </div>
           </div>
         </div>
-        <div className="absolute -right-10 top-80 md:top-60 z-10">
+        <div className="absolute -right-10 top-[360px] lg:top-48 xl:top-64 z-10">
           <img
-            className="rounded-xl w-48 h-44 md:w-80 md:h-60 lg:w-[350px] lg:h-52 xl:w-[450px] xl:h-64"
+            className="rounded-xl w-48 h-full lg:w-80  lg:w-[350px]  xl:w-[450px] "
             src={"/images/main-img_8.svg"}
             alt="img"
           />
-          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Image
-              src={"/images/player-icon.svg"}
-              width={30}
-              height={30}
+          <div className="absolute bottom-3 right-7 lg:right-5">
+            <img
+            className="w-5 h-full lg:w-8 "
+              src={"/images/volume-icon.svg"}
               alt="player"
             />
           </div>
-          <div className="flex justify-center items-center absolute left-0 md:left-4 bottom-8 px-2 md:px-4 py-1 md:py-2 rounded-3xl bg-[#69696999]">
+          <div className="flex justify-center items-center absolute left-0 md:left-4 bottom-1 md:bottom-2 lg:bottom-3 px-2 md:px-4 py-1 md:py-2 rounded-3xl bg-[#69696999]">
             <img
-              className="rounded-full w-7 h-7 md:w-11 md:h-11"
+              className="rounded-full w-7 h-full lg:w-11 "
               src={"/images/small-img_2.svg"}
               alt={"small"}
             />
             <div className="flex flex-col text-white ml-2 md:ml-3">
-              <h2 className="text-[6px] md:text-xs font-medium">Andrexa Davis</h2>
-              <p className="text-[6px] md:text-[6px] font-light">Graphic Designer</p>
+              <h2 className="text-[6px] lg:text-xs font-medium">Andrexa Davis</h2>
+              <p className="text-[6px] lg:text-[6px] font-light">Graphic Designer</p>
             </div>
           </div>
         </div>
@@ -130,17 +128,19 @@ const Recruitment = () => {
             />
           </div>
         </div>
-        <div className="hidden p-6 bg-white rounded-lg absolute -left-20 bottom-20 z-20 max-w-md shadow-xl">
-          <h2 className="text-[#A3A3A3]">
+        <div className=" rounded-lg absolute bottom-24 -left-6 md:-left-20 md:bottom-20 z-20 ">
+          <img className="w-44 md:w-72 lg:w-96 h-full" src="/images/question.svg" alt="question" />
+          {/* <h2 className="text-[#A3A3A3]">
             <span className="text-2xl text-white">Q1</span> Management / Project
             Manager
           </h2>
           <p>
             It&apos;s your first day at work and you meet your team for the
-            first time, what do you say to them to get them motivated and trust
+            first time, what do you say to them to get them motivated and trust 
             you?
-          </p>
+          </p> */}
         </div>
+
       </div>}
       {/* Dashboard slide */}
     { dashboard &&  <div className="bg-img-dashboard h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
