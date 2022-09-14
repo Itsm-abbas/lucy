@@ -35,10 +35,6 @@
   width: 100%;
 }
 .bg-img-chat{
-  border-radius: 2rem;
-  border-top: 10px solid black;
-  border-right: 10px solid black;
-  border-left: 10px solid black;
   background: url("/images/chat-1.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,9 +95,7 @@ a {
   transition: .3s all;
 }
 
-.nowPlayingTitle {
-  font-size: 3rem;
-}
+
 
 
 

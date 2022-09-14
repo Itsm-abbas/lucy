@@ -44,7 +44,7 @@ const Recruitment = () => {
         </div>
       </div>
       {/* First slide */}
-      {interview && <div className="relative  bg-white border-t-8 border-r-8 border-l-8 h-full border-black border-solid  rounded-2xl w-full px-5 md:px-16 pt-12 ">
+      {interview && <div className="relative  bg-white  border-l-8 h-full border-black border-t-8 border-r-8 border-solid  rounded-2xl w-full px-5 md:px-16 pt-12 ">
         <div className="absolute -right-10 top-60 lg:-top-8 z-10">
           <img
             className="rounded-xl w-48 h-full lg:w-80  lg:w-[350px]  xl:w-[450px]"
@@ -143,7 +143,7 @@ const Recruitment = () => {
 
       </div>}
       {/* Dashboard slide */}
-    { dashboard &&  <div className="bg-img-dashboard h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
+    { dashboard &&  <div className=" bg-img-dashboard h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
         <div className="absolute -bottom-0 left-[calc(100%-85%)]">
           <img className="w-48 md:w-80 md:h-60" src={"/images/dashboard_2.svg"} alt="dashbaord_2"/>
         </div>
@@ -152,7 +152,7 @@ const Recruitment = () => {
         </div>
       </div>}
       {/* Chat slide */}
-      {chat && <div className="bg-img-chat h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
+      {chat && <div className="bg-img-chat h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative rounded-2xl border-black border-t-8 border-r-8 border-l-8 border-solid">
       <div className="absolute top-0 -right-8 md:top-24   md:-right-28">
           <img className="w-52 h-80 md:hidden lg:flex lg:w-[450px] lg:h-[550px] xl:w-[550px] xl:h-[650px]" src={"/images/chat-2.svg"} alt="dashbaord_2"/>
           <div className="hidden md:flex lg:hidden">
