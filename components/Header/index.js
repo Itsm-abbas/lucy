@@ -8,12 +8,12 @@ const Header = () => {
   const [showdrop , setDrop] = useState(false)
 
   return (
-    <header className=" flex relative justify-between items-center text-white px-8 md:px-20 2xl:px-40  h-20 2xl:h-24 bg-[#191919] font-Poppins shadow-xl">
+    <header className=" flex relative justify-between items-center text-white px-8  lg:px-20 2xl:px-40  h-20 2xl:h-24 bg-[#191919] font-Poppins shadow-xl">
       {/* Dropdown desktop */}
       <div
-        className={` grid grid-cols-3 gap-10 absolute top-full z-50 left-0 right-0 w-full h-80 transform ${
+        className={` md:grid grid-cols-4 gap-10 absolute top-full z-50 left-0 right-0 w-full h-80 transform ${
           show ? "scale-1" : "scale-0"
-        } bg-white text-black py-14 px-8 md:px-20 2xl:px-40  transition-all duration-150`}
+        } bg-white text-black py-14 hidden md:px-8 lg:px-20 2xl:px-40  transition-all duration-150`}
       >
         <div className=" flex flex-col gap-6">
           <div className=" flex gap-4 items-center px-3 py-4 rounded-lg hover:bg-[#C4F0004D] transition-all duration-200 cursor-pointer">
@@ -23,7 +23,7 @@ const Header = () => {
               height={40}
               alt="icon"
             />
-            <p className="text-base ">
+            <p className="text-xs font-semibold ">
               Asynchronous interview from SMB to Entreprise
             </p>
           </div>
@@ -34,7 +34,7 @@ const Header = () => {
               height={40}
               alt="icon"
             />
-            <p className="text-base ">Founder Pitch Pool</p>
+            <p className="text-xs font-semibold ">Founder Pitch Pool</p>
           </div>
         </div>
         <div className="flex flex-col gap-6">
@@ -45,7 +45,7 @@ const Header = () => {
               height={40}
               alt="icon"
             />
-            <p className="text-base ">Model Management Company</p>
+            <p className="text-xs font-semibold ">Model Management Company</p>
           </div>
           <div className="flex gap-4 items-center px-3 py-4 rounded-lg hover:bg-[#C4F0004D] transition-all duration-200 cursor-pointer">
             <Image
@@ -54,16 +54,16 @@ const Header = () => {
               height={40}
               alt="icon"
             />
-            <p className="text-base ">School Admission Interview</p>
+            <p className="text-xs font-semibold ">School Admission Interview</p>
           </div>
         </div>
-        <div className="flex gap-2">
-          <img className="h-36" src="/images/submenu-img.svg" alt="img" />
+        <div className="flex gap-2 col-span-2 justify-center">
+          <img className="md:h-32 lg:h-36" src="/images/submenu-img.svg" alt="img" />
           <div className="flex flex-col items-center gap-2">
-            <img className="h-12 " src="/images/submenu-img-2.svg" alt="img" />
+            <img className="h-11 " src="/images/submenu-img-2.svg" alt="img" />
             <img className=" h-20 " src="/images/submenu-im-3.svg" alt="img" />
           </div>
-          <img className=" h-36 " src="/images/submenu-img-4.svg" alt="img" />
+          <img className=" md:h-32 lg:h-36" src="/images/submenu-img-4.svg" alt="img" />
         </div>
       </div>
       {/* Mobile navigation */}

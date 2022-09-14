@@ -3,7 +3,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 const Hire = () => {
   return (
-    <div className="relative px-10 lg:px-20 py-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
+    <div className="relative px-6 md:px-10 lg:px-20 py-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
       <div className="">
         <h2 className="text-3xl lg:text-4xl font-semibold mb-8">
           Hire smarter, not harder

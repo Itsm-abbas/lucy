@@ -30,7 +30,7 @@ const Recruitment = () => {
   return (
     <div className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 2xl:px-44 font-Poppins font-semibold overflow-hidden">
       <div className="relative flex flex-col items-center text-[#191919] ">
-        <div className="gradient h-full w-96 "></div>
+        <div className="gradient h-full w-40 md:w-96 "></div>
 
         <h1 className="text-4xl mb-6">Strong products for your recruitments</h1>
         <p className="mb-12">
@@ -216,7 +216,7 @@ const Recruitment = () => {
       {/*  */}
       <div className="pt-40 grid lg:grid-cols-2 relative">
         {/* gradient */}
-        <div className="gradient2 h-full w-96 "></div>
+        <div className="gradient2 h-full w-40 md:w-96 "></div>
         <div className="pb-20 ">
           <h2 className="text-3xl mb-6 text-black">
             Automated recruiting process help you to focus on what matters the

@@ -65,7 +65,7 @@ const People = () => {
         }
         return (
           <article
-            className={`article absolute  left-10 right-10 top-1/4 md:top-10  ${position}  flex flex-col  md:flex-row items-start md:items-center font-Poppins shadow-lg`}
+            className={`article absolute  left-4 md:left-10 right-10 top-1/4 md:top-10  ${position}  flex flex-col  md:flex-row items-start md:items-center font-Poppins shadow-lg`}
             key={id}
           >
             <div className="flex items-center">
@@ -82,7 +82,7 @@ const People = () => {
             <div className="text-start  py-10 px-4 md:px-10  ">
               <p className="font-medium md:font-semibold text-sm md:text-lg ">{words}</p>
             </div>
-            <div className="absolute right-10 bottom-4 text-start hidden md:flex">
+            <div className="absolute right-10 bottom-4 text-start hidden md:flex flex-col">
               <p className=" text-gray-400 font-semibold">{post}</p>
               <h4 className="font-semibold italic">{name}</h4>
             </div>
