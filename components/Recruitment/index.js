@@ -6,6 +6,7 @@ const Recruitment = () => {
   const [interview, setinterview] = useState(false);
   const [dashboard, setDashboard] = useState(false);
   const [chat, setChat] = useState(false);
+  // Click handler function for buttons
   const clickHandler = (e) => {
     let text = e.target.textContent;
     if (text === "AI interview") {
@@ -30,18 +31,18 @@ const Recruitment = () => {
     <div className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 2xl:px-44 font-Poppins font-semibold overflow-hidden">
       <div className="relative flex flex-col items-center text-[#191919] ">
         <div className="gradient h-full w-40 md:w-96 "></div>
-
         <h1 className="text-4xl mb-6">Strong products for your recruitments</h1>
         <p className="mb-12">
           Get back 60% of your time you&apos;re now spending on recruiting and
           busywork.
         </p>
+        {/* Buttons -- start */}
         <div className="bg-[#191919] w-[350px] md:w-[410px] py-1 px-1 rounded-[36px] flex justify-between items-center mb-28 z-50">
           <button
             onClick={(e) => clickHandler(e)}
             className={`${
               interview ? "bg-white text-black" : ""
-            }  rounded-[36px] hover:bg-white hover:text-black text-white px-3 py-1`}
+            }  rounded-[36px] hover:bg-white hover:text-black text-white px-3 py-1 `}
           >
             AI interview
           </button>
@@ -62,13 +63,15 @@ const Recruitment = () => {
             Chat
           </button>
         </div>
+        {/* Buttons -- end */}
+
       </div>
-      {/* First slide */}
+      {/* First slide (Ai interview) -- start */}
       {interview && (
         <div className="relative  bg-white  border-l-8 h-full border-black border-t-8 border-r-8 border-solid  rounded-2xl w-full px-5 md:px-16 pt-12 ">
           <div className="absolute -right-10 top-60 lg:-top-8 z-10">
             <img
-              className="rounded-xl w-48 h-full lg:w-80  lg:w-[350px]  xl:w-[450px]"
+              className="rounded-xl w-48 h-full lg:w-[350px]  xl:w-[450px]"
               src={"/images/main-img_7.svg"}
               alt="img"
             />
@@ -159,19 +162,12 @@ const Recruitment = () => {
               src="/images/question.svg"
               alt="question"
             />
-            {/* <h2 className="text-[#A3A3A3]">
-            <span className="text-2xl text-white">Q1</span> Management / Project
-            Manager
-          </h2>
-          <p>
-            It&apos;s your first day at work and you meet your team for the
-            first time, what do you say to them to get them motivated and trust 
-            you?
-          </p> */}
           </div>
         </div>
       )}
-      {/* Dashboard slide */}
+      {/* First slide (Ai interview) -- end */}
+
+      {/* 2nd slide (Dashboard) -- start */}
       {dashboard && (
         <div className=" bg-img-dashboard h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
           <div className="absolute -bottom-0 left-[calc(100%-85%)]">
@@ -190,7 +186,9 @@ const Recruitment = () => {
           </div>
         </div>
       )}
-      {/* Chat slide */}
+      {/* 2nd slide (Dashboard) -- end */}
+
+      {/* 3rd slide (Chat) -- start */}
       {chat && (
         <div className="bg-img-chat h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative rounded-2xl border-black border-t-8 border-r-8 border-l-8 border-solid">
           <div className="absolute top-0 -right-8 md:top-24   md:-right-28">
@@ -263,10 +261,13 @@ const Recruitment = () => {
           </div>
         </div>
       )}
-      {/*  */}
+      {/* 3rd slide (Chat) -- end */}
+
+      {/* bottom section */}
       <div className="pt-40 grid lg:grid-cols-2 relative">
         {/* gradient */}
         <div className="gradient2 h-full w-40 md:w-96 "></div>
+        {/* gradient */}
         <div className="pb-20 ">
           <h2 className="text-3xl mb-6 text-black">
             Automated recruiting process help you to focus on what matters the
