@@ -5,8 +5,8 @@ const Main = () => {
   return (
     <main>
       <div className="relative bg-[#19181A] text-white pt-20 md:pt-28 md:pb-20 lg:pb-0 px-8 md:px-16 lg:px-28 2xl:px-44 pb-0 font-Poppins overflow-hidden">
-        <div className="gradient w-[400px] h-2/3"></div>
-        <div className="gradient2 w-96 h-full"></div>
+        <div className="gradient w-44 md:w-[400px] h-2/3"></div>
+        <div className="gradient2 w-44 md:w-96 h-full"></div>
         <div className="flex flex-col md:flex-row justify-between ">
           <div className="z-10">
             <h1 className="text-2xl md:text-3xl lg:text-4xl capitalize font-semibold mb-6 leading-10  lg:leading-[55px]">

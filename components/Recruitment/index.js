@@ -103,7 +103,7 @@ const Recruitment = () => {
         <h1 className="font-medium text-xl md:text-2xl mb-6  border-gray-500 border-b-[1px] pb-5">
           AP Company - Project Manager
         </h1>
-        <h1 className="font-medium text-[9px] md:text-lg lg:text-2xl mb-8 flex items-center">
+        <h1 className="font-medium text-[12px] md:text-lg lg:text-2xl mb-8 flex items-center">
           <span className="rounded-full py-1 md:py-2 font-bold text-white px-2  mr-2 md:px-4 md:mr-4 text-xs  md:text-base bg-black">
             1
           </span>
