@@ -1,9 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const People = () => {
+  // Data array for the slider
   let data = [
     {
+      id: 1,
       name: "Dru Dalton",
       img: "/images/people_1.svg",
       words:
@@ -11,6 +14,7 @@ const People = () => {
       post: "CEO",
     },
     {
+      id: 2,
       name: "Karla Deras",
       img: "/images/people_2.svg",
       words:
@@ -18,6 +22,7 @@ const People = () => {
       post: "Recruiter",
     },
     {
+      id: 3,
       name: "Jorge Diaz Largo",
       img: "/images/people_3.svg",
       words:
@@ -80,7 +85,9 @@ const People = () => {
               </div>
             </div>
             <div className="text-start  py-10 px-4 md:px-10  ">
-              <p className="font-medium md:font-semibold text-sm md:text-lg ">{words}</p>
+              <p className="font-medium md:font-semibold text-sm md:text-lg ">
+                {words}
+              </p>
             </div>
             <div className="absolute right-10 bottom-4 text-start hidden md:flex flex-col">
               <p className=" text-gray-400 font-semibold">{post}</p>
@@ -89,7 +96,7 @@ const People = () => {
           </article>
         );
       })}
-
+      {/* Arrow button */}
       <button
         onClick={() => setIndex(index + 1)}
         className="absolute top-60 md:top-28  right-4  bg-black text-white rounded-full p-3"

@@ -1,20 +1,20 @@
 import Image from "next/image";
 import React from "react";
 
-const Main = ({showUseDrop, setShowUseDrop}) => {
+const Main = ({ setShowUseDrop }) => {
+  // Handle submit function for use case dropdown
   const handleSubmenu = (e) => {
-    if (!e.target.classList.contains('usecase')) {
-      setShowUseDrop(false)
-    }
-    else{
-      setShowUseDrop(true)
+    if (!e.target.classList.contains("usecase")) {
+      setShowUseDrop(false);
+    } else {
+      setShowUseDrop(true);
     }
   };
   return (
     <main onMouseOver={handleSubmenu}>
       <div className="relative bg-[#19181A] text-white pt-20 md:pt-28 md:pb-20 lg:pb-0 px-8 md:px-16 lg:px-28 2xl:px-44 pb-0 font-Poppins overflow-hidden">
-        <div className="gradient w-44 md:w-[400px] h-2/3"></div>
-        <div className="gradient2 w-44 md:w-96 h-full"></div>
+        <div className="gradient absolute left-0 top-0 w-44 md:w-[400px] h-2/3"></div>
+        <div className="gradient2 absolute right-0 top-0 w-44 md:w-96 h-full"></div>
         <div className="flex flex-col md:flex-row justify-between ">
           <div className="z-10">
             <h1 className="text-2xl md:text-3xl lg:text-4xl capitalize font-semibold mb-6 leading-10  lg:leading-[55px]">
@@ -32,14 +32,13 @@ const Main = ({showUseDrop, setShowUseDrop}) => {
                 height="200%"
                 width="200%;"
                 src="https://embed.wave.video/7JC0cVHLBMFtbQQA"
-                frameborder="0"
                 allow="autoplay; fullscreen"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
-{/* **** */}
+      {/* **** */}
       <div className="grid md:grid-cols-5 gap-12 md:gap-20 pl-6  md:pl-20 py-20 lg:py-28 2xl:pl-40 font-Poppins">
         <div className="pr-8 md:pr-0 md:col-span-2">
           <p className="text-2xl md:text-3xl lg:4xl text-[#191919] font-semibold ">

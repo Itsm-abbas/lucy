@@ -12,8 +12,9 @@ const Hire = () => {
           With Lucy on your side, you&apos;ll find the best candidates in no
           time.
         </p>
-        {/* Line */}
+
         <div className="flex flex-col absolute px-10 lg:px-0 lg:relative bottom-4 md:bottom-14 left-0 w-full ">
+          {/* Anchor tags -- start */}
           <div className="w-full h-[1px] bg-black mt-16  mb-10"></div>
           <a
             className="text-[#1743D7] text-sm lg:text-base flex items-center hover:text-black"
@@ -28,6 +29,7 @@ const Hire = () => {
             End-to-End AI Video Interview Platform &nbsp; <FaArrowRight />
           </a>
         </div>
+        {/* Anchor tags -- end */}
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 grid-rows-2 gap-12">
         <div>
@@ -41,8 +43,7 @@ const Hire = () => {
           </div>
           <h2 className="text-2xl lg:text-3xl font-semibold mb-3">Millions</h2>
           <p className="text-base lg:text-lg text-[#696969]">
-            {" "}
-            Job opportunities sent{" "}
+            Job opportunities sent
           </p>
         </div>
         <div>
@@ -58,8 +59,7 @@ const Hire = () => {
             10K+ Hired
           </h2>
           <p className="text-base lg:text-lg text-[#696969]">
-            {" "}
-            Through Lucy Platform{" "}
+            Through Lucy Platform
           </p>
         </div>
         <div>
@@ -73,8 +73,7 @@ const Hire = () => {
           </div>
           <h2 className="text-2xl lg:text-3xl font-semibold mb-3">100K+</h2>
           <p className="text-base lg:text-lg text-[#696969]">
-            {" "}
-            Virtual interviews conducted{" "}
+            Virtual interviews conducted
           </p>
         </div>
         <div>
@@ -88,7 +87,6 @@ const Hire = () => {
           </div>
           <h2 className="text-2xl lg:text-3xl font-semibold mb-3">2000+</h2>
           <p className="text-base lg:text-lg text-[#696969]">
-            {" "}
             Well-crafted interview questions
           </p>
         </div>

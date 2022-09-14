@@ -5,8 +5,10 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
-      <div className="w-full flex justify-center items-center bg-[#191919] text-white  font-Poppins ">
-        <div className="text-center py-28 px-1 md:px-0">
+      <div className="overflow-hidden relative w-full flex justify-center items-center bg-[#191919] text-white  font-Poppins ">
+        <div className="gradient absolute right-0 top-0 bottom-0 w-80 h-full"></div>
+        <div className="gradient3 absolute bottom-0 left-0 w-[600px] h-32"></div>
+        <div className="text-center py-28 px-1 md:px-0 ">
           <h1 className="text-3xl md:text-4xl font-semibold mb-10">
             Get started with Lucy
           </h1>
@@ -17,7 +19,7 @@ const Footer = () => {
           <button className="btn-white">Try Lucy Free</button>
         </div>
       </div>
-      <div className="px-8 md:px-12 lg:px-32 pt-20 bg-gray-900 w-full text-white">
+      <div className="px-8 md:px-12 lg:px-32 pt-20 bg-[rgba(0,0,0,.86)] w-full text-white">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10 lg:grid-cols-5 lg:gap-6 border-b border-solid border-white pb-10">
           <div className="flex justify-between col-span-2 md:col-span-3 lg:col-auto items-center w-28 h-8 ">
             <Image
@@ -35,17 +37,18 @@ const Footer = () => {
           </div>
           <div className="flex flex-col  gap-5">
             <h1 className="font-bold text-xl">Lucy</h1>
+            {/* Footer links -- start */}
             <Link href={"/"}>
-              <a className="hover:text-green ">Sign In</a>
+              <a className="anchor-hover ">Sign In</a>
             </Link>
             <Link href={"/"}>
-              <a className="hover:text-green">Service</a>
+              <a className="anchor-hover">Service</a>
             </Link>
             <Link href={"/"}>
-              <a className="hover:text-green">Plan</a>
+              <a className="anchor-hover">Plan</a>
             </Link>
             <Link href={"/"}>
-              <a className="hover:text-green">Lucy Community</a>
+              <a className="anchor-hover">Lucy Community</a>
             </Link>
           </div>
           <div className="flex flex-col gap-5">
@@ -68,21 +71,22 @@ const Footer = () => {
             <Link href={"/"}>
               <a className="anchor-hover">Candidate Licenses</a>
             </Link>
+            {/* Footer links -- end */}
           </div>
           <div className="mb-6 flex gap-6 lg:grid  items-center col-span-2 md:col-span-3 lg:col-auto">
-            {/* Dropdown */}
+            {/* Language dropdown -- start  */}
             <div>
               <label
-                for="language"
-                class="block mb-2 text-md font-semibold text-white "
+                htmlFor="language"
+                className="block mb-2 text-md font-semibold text-white "
               >
                 Language
               </label>
               <select
                 id="language"
-                class="bg-gray-50 border border-gray-300 text-gray-900 font-semibold text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-36 p-2.5"
+                className="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 font-semibold text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-36 p-2.5"
               >
-                <option className="text-[#686868]" selected value="English">
+                <option className="text-[#686868]" value="English">
                   English
                 </option>
                 <option className="text-[#686868] h-20" value="Chinese">
@@ -90,6 +94,9 @@ const Footer = () => {
                 </option>
               </select>
             </div>
+            {/* Language dropdown -- end  */}
+
+            {/* Social links -- start */}
             <div className="flex gap-6 text-3xl self-end lg:self-start">
               <a href="">
                 <FaFacebookSquare />
@@ -101,6 +108,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
             </div>
+            {/* Social links -- end */}
           </div>
         </div>
         <div className=" flex justify-center items-center py-8">
