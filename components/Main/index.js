@@ -23,15 +23,15 @@ const Main = ({ setShowUseDrop }) => {
             <p className="text-2xl font-normal capitalize mb-10 ">
               hiring made easy
             </p>
-            <button className="btn-green shadow-md px-10">Try Lucy Free</button>
+            <button className="btn-green shadow-md px-10 font-bold">Try Lucy Free</button>
           </div>
           <div className="relative w-80 h-[380px] md:w-96 md:h-96  ">
-            <div className="absolute right-24 lg:right-52 top-8 md:top-14 lg:-top-8 h-full w-full">
+            <div className="absolute right-24 lg:right-52 z-10 top-8 md:top-14 lg:-top-8 h-full w-full">
               <iframe
                 className="bg-transparent"
                 height="200%"
                 width="200%;"
-                src="https://embed.wave.video/7JC0cVHLBMFtbQQA"
+                src="https://embed.wave.video/oh8UwEjhZVPpM524"
                 allow="autoplay; fullscreen"
               ></iframe>
             </div>
@@ -41,7 +41,7 @@ const Main = ({ setShowUseDrop }) => {
       {/* **** */}
       <div className="grid md:grid-cols-5 gap-12 md:gap-20 pl-6  md:pl-20 py-20 lg:py-28 2xl:pl-40 font-Poppins">
         <div className="pr-8 md:pr-0 md:col-span-2">
-          <p className="text-2xl md:text-3xl lg:4xl text-[#191919] font-semibold ">
+          <p className="text-2xl md:text-3xl lg:text-[40px] leading-[60px] text-[#191919] font-semibold ">
             Trusted by forward-thinking companies who value ease of use over
             complexity
           </p>

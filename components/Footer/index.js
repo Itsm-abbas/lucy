@@ -1,13 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Fragment, useState } from "react";
+import { Listbox, Transition } from "@headlessui/react";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaLinkedin,
+  FaChevronDown,
+} from "react-icons/fa";
 const Footer = () => {
+  const languages = [
+    { id: 1, name: "English" },
+    { id: 2, name: "Chinese" },
+  ];
+  // Selected value stored in selected state
+  const [selected, setSelected] = useState(languages[0]);
   return (
     <footer>
       <div className="overflow-hidden relative w-full flex justify-center items-center bg-[#191919] text-white  font-Poppins ">
-        <div className="gradient absolute right-0 top-0 bottom-0 w-80 h-full"></div>
-        <div className="gradient3 absolute bottom-0 left-0 w-[600px] h-32"></div>
+        <div className="gradient absolute right-0 top-0 bottom-0 w-80 h-full transform rotate-45 rounded-full"></div>
+        <div className="gradient3 absolute bottom-0 right-0 w-[605.93px] h-[300.16px] rounded-full"></div>
+        <div className="gradient4 absolute -bottom-10 -left-40 w-[805.93px] h-[200.16px] rounded-full"></div>
         <div className="text-center py-28 px-1 md:px-0 ">
           <h1 className="text-3xl md:text-4xl font-semibold mb-10">
             Get started with Lucy
@@ -16,10 +29,12 @@ const Footer = () => {
             Sort out the stress of managing recruitment and give candidates{" "}
             <br /> and coworkers a better hiring experience.
           </p>
-          <button className="btn-white">Try Lucy Free</button>
+          <button className="btn-white w-[160px] h-[48px] font-bold text-sm tracking-normal leading-[21px]">
+            Try Lucy Free
+          </button>
         </div>
       </div>
-      <div className="px-8 md:px-12 lg:px-32 pt-20 bg-[rgba(0,0,0,.86)] w-full text-white">
+      <div className="px-8 md:px-12 lg:px-32 pt-20 bg-[rgba(0,0,0,.86)] w-full text-white font-Poppins">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10 lg:grid-cols-5 lg:gap-6 border-b border-solid border-white pb-10">
           <div className="flex justify-between col-span-2 md:col-span-3 lg:col-auto items-center w-28 h-8 ">
             <Image
@@ -76,23 +91,56 @@ const Footer = () => {
           <div className="mb-6 flex gap-6 lg:grid  items-center col-span-2 md:col-span-3 lg:col-auto">
             {/* Language dropdown -- start  */}
             <div>
-              <label
-                htmlFor="language"
-                className="block mb-2 text-md font-semibold text-white "
-              >
-                Language
-              </label>
-              <select
-                id="language"
-                className="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 font-semibold text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-36 p-2.5"
-              >
-                <option className="text-[#686868]" value="English">
-                  English
-                </option>
-                <option className="text-[#686868] h-20" value="Chinese">
-                  Chinese
-                </option>
-              </select>
+              <Listbox value={selected} onChange={setSelected}>
+                <Listbox.Label className="text-sm text-[#FFFFFF]">
+                  Language
+                </Listbox.Label>
+                <div className="relative mt-1">
+                  <Listbox.Button className="text-black cursor-pointer relative w-[153px] h-[48px] p-[10px] rounded-[5px]  bg-white text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm text-[14px]">
+                    <span className="block truncate">{selected.name}</span>
+                    <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                      <FaChevronDown className="h-4 w-9 text-[#A3A3A3]" />
+                    </span>
+                  </Listbox.Button>
+                  <Transition
+                    as={Fragment}
+                    leave="transition ease-in duration-100"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <Listbox.Options className="absolute rounded-[5px] w-[153px] py-4  bg-white text-base shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                      {languages.map((language, languageIdx) => (
+                        <Listbox.Option
+                          key={languageIdx}
+                          className={({ active }) =>
+                            `relative group cursor-default select-none  py-[10px] px-[21px] text-sm  w-[153px] h-[40px] ${
+                              active
+                                ? "bg-[#A3A3A3]  text-white"
+                                : "text-gray-900"
+                            }`
+                          }
+                          value={language}
+                        >
+                          {({ selected }) => (
+                            <>
+                              <span
+                                className={`block truncate group-hover:font-semibold ${
+                                  selected ? "font-medium" : "font-normal"
+                                }`}
+                              >
+                                {language.name}
+                              </span>
+                              {selected ? (
+                                <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-[#A3A3A3]"></span>
+                              ) : null}
+                            </>
+                          )}
+                        </Listbox.Option>
+                      ))}
+                    </Listbox.Options>
+                  </Transition>
+                </div>
+              </Listbox>
             </div>
             {/* Language dropdown -- end  */}
 

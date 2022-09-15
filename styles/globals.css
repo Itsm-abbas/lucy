@@ -24,7 +24,6 @@
   @apply hover:text-green transition-all duration-200;
 }
 
-@tailwind utilities;
 
 
 html,
@@ -44,7 +43,7 @@ a {
 
 /* Recruiment section images */
 .bg-img-dashboard {
-  background: url("/images/dashboard_1.svg");
+  background: url("/images/dashboard_1.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -53,7 +52,7 @@ a {
 }
 
 .bg-img-chat {
-  background: url("/images/chat-1.svg");
+  background: url("/images/chat-1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
@@ -63,23 +62,27 @@ a {
 
 /* For gradient backgrounds */
 .gradient {
-  z-index: 10;
+  position: absolute;
   background: rgba(0, 191, 138, 0.4);
   filter: blur(191px);
-  transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0);
+  /* transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0); */
 }
 
 .gradient2 {
   position: absolute;
-  z-index: 20;
   background: rgba(0, 191, 138, 0.2);
   filter: blur(191px);
-  transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0);
+  /* transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0); */
 }
 
 .gradient3 {
-  background: radial-gradient(84.52% 66.93% at 48.16% 48.41%, rgba(255, 255, 255, 0.3) 0%, rgba(196, 240, 0, 0) 100%);
-  filter: blur(120px);
+  background: radial-gradient(84.52% 66.93% at 48.16% 48.41%, rgba(255, 255, 255, 0.171) 0%, rgba(240, 240, 240, 0) 100%);
+filter: blur(60px);
+transform: rotate(170.56deg);
+}
+.gradient4{
+  background: radial-gradient(84.52% 66.93% at 48.16% 48.41%, rgba(255, 255, 255, 0.3) 0%, rgba(196, 240, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(60px);
 }
 
 
@@ -122,3 +125,5 @@ body::-webkit-scrollbar-thumb{
   background-color: gray;
   border-radius: 1rem;
 }
+
+@tailwind utilities;

@@ -19,7 +19,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
   return (
     <header
       onMouseOver={handleSubmenu}
-      className=" flex relative justify-between items-center text-white px-8  lg:px-20 2xl:px-40  h-20 2xl:h-24 bg-[#191919] font-Poppins shadow-xl"
+      className="fixed flex z-50 right-0 left-0 justify-between items-center text-white px-8  lg:px-20 2xl:px-40  h-20 2xl:h-24 bg-[#191919] font-Poppins shadow-xl"
     >
       <div className="flex justify-between items-center w-28 h-8  ">
         <Image src={"/images/icon.svg"} alt={"icon"} width={28} height={37} />
@@ -50,15 +50,15 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
           <button className="btn-transparent">sign in</button>
         </Link>
         <Link href={"/"}>
-          <button className="btn-green">try lucy free</button>
+          <button className="btn-green p-[10px] font-bold text-[14px]">try lucy free</button>
         </Link>
       </div>
       {/* Header links -- end */}
 
       {/* Use Case Dropdown desktop -- start */}
       <div
-        className={`usecase usecase md:grid grid-cols-4 gap-10 absolute top-full z-50 left-0 right-0 w-full h-80 transform ${
-          showUseDrop ? "scale-1" : "scale-0"
+        className={`usecase  grid-cols-4 gap-10 absolute top-full z-50 left-0 right-0 w-full  overflow-hidden shadow-xl transform ${
+          showUseDrop ? " md:grid" : "hidden"
         } bg-white text-black py-14 hidden md:px-8 lg:px-20 2xl:px-40  transition-all duration-150`}
       >
         <div className="usecase  flex flex-col gap-6">
@@ -70,7 +70,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
               height={40}
               alt="icon"
             />
-            <p className="usecase text-xs font-semibold ">
+            <p className="usecase text-lg font-medium ">
               Asynchronous interview from SMB to Entreprise
             </p>
           </div>
@@ -82,7 +82,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
               height={40}
               alt="icon"
             />
-            <p className="usecase text-xs font-semibold ">Founder Pitch Pool</p>
+            <p className="usecase text-lg font-medium ">Founder Pitch Pool</p>
           </div>
         </div>
         <div className="usecase flex flex-col gap-6">
@@ -94,7 +94,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
               height={40}
               alt="icon"
             />
-            <p className="usecase text-xs font-semibold ">
+            <p className="usecase text-lg font-medium ">
               Model Management Company
             </p>
           </div>
@@ -106,7 +106,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
               height={40}
               alt="icon"
             />
-            <p className="usecase text-xs font-semibold ">
+            <p className="usecase text-lg font-medium ">
               School Admission Interview
             </p>
           </div>

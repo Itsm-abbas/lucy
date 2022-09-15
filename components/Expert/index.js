@@ -5,7 +5,7 @@ import React from "react";
 const Expert = () => {
   return (
     <div className="bg-[#F2EDE4]   px-2 md:px-20 py-20 lg:px-52 font-Poppins">
-      <div className="w-full mb-16 text-xl  md:text-2xl font-bold">
+      <div className="w-full mb-16 text-[28px]  lg:text-[40px] font-semibold leading-[42px] lg:leading-[60px]">
         Experts says...
       </div>
       <div class="powr-music-player" id="63bdb70b_1639211568"></div>

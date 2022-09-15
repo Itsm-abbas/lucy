@@ -8,14 +8,14 @@ const Hire = () => {
         <h2 className="text-3xl lg:text-4xl font-semibold mb-8">
           Hire smarter, not harder
         </h2>
-        <p>
+        <p className="text-[18px] font-medium leading-[27px]">
           With Lucy on your side, you&apos;ll find the best candidates in no
           time.
         </p>
 
         <div className="flex flex-col absolute px-10 lg:px-0 lg:relative bottom-4 md:bottom-14 left-0 w-full ">
           {/* Anchor tags -- start */}
-          <div className="w-full h-[1px] bg-black mt-16  mb-10"></div>
+          <div className="w-full h-[1px] bg-black mt-16 lg:mt-[120px]  mb-10 lg:mb-[65px]"></div>
           <a
             className="text-[#1743D7] text-sm lg:text-base flex items-center hover:text-black"
             href=""
@@ -41,7 +41,7 @@ const Hire = () => {
               alt={"img"}
             />
           </div>
-          <h2 className="text-2xl lg:text-3xl font-semibold mb-3">Millions</h2>
+          <h2 className="text-2xl lg:text-[36px] font-semibold mb-3 leading-[54px]">Millions</h2>
           <p className="text-base lg:text-lg text-[#696969]">
             Job opportunities sent
           </p>
@@ -55,7 +55,7 @@ const Hire = () => {
               alt={"img"}
             />
           </div>
-          <h2 className="text-2xl lg:text-3xl font-semibold mb-3">
+          <h2 className="text-2xl lg:text-[36px] font-semibold mb-3 leading-[54px]">
             10K+ Hired
           </h2>
           <p className="text-base lg:text-lg text-[#696969]">
@@ -71,7 +71,7 @@ const Hire = () => {
               alt={"img"}
             />
           </div>
-          <h2 className="text-2xl lg:text-3xl font-semibold mb-3">100K+</h2>
+          <h2 className="text-2xl lg:text-[36px] font-semibold mb-3 leading-[54px]">100K+</h2>
           <p className="text-base lg:text-lg text-[#696969]">
             Virtual interviews conducted
           </p>
@@ -85,7 +85,7 @@ const Hire = () => {
               alt={"img"}
             />
           </div>
-          <h2 className="text-2xl lg:text-3xl font-semibold mb-3">2000+</h2>
+          <h2 className="text-2xl lg:text-[36px] font-semibold mb-3 leading-[54px]">2000+</h2>
           <p className="text-base lg:text-lg text-[#696969]">
             Well-crafted interview questions
           </p>
