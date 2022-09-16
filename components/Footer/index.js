@@ -75,7 +75,7 @@ const Footer = () => {
               <a className="anchor-hover">About Lucy</a>
             </Link>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 col-span-2 sm:col-span-1">
             <h1 className="font-bold text-xl">Info</h1>
             <Link href={"/"}>
               <a className="anchor-hover">User Licenses</a>

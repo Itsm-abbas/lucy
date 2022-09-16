@@ -135,3 +135,22 @@ body::-webkit-scrollbar-thumb{
 }
 
 @tailwind utilities;
+
+/*  */
+
+
+
+.animate {
+  width: 200%;
+  position: absolute;
+  float: left;
+  animation: slider 60s linear infinite;
+}
+
+.animate:hover {
+  animation-play-state: paused;
+}
+@keyframes slider {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
