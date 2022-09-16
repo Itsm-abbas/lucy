@@ -12,8 +12,9 @@ const Main = ({ setShowUseDrop }) => {
   return (
     <main onMouseOver={handleSubmenu}>
       <div className="relative h-[90vh] md:h-auto bg-[#19181A] text-white pt-56 lg:pt-60 md:pt-42  lg:pb-0 pl-8 md:pl-16 lg:pl-28  2xl:px-44 pb-0 font-Poppins overflow-hidden">
-        <div className="gradient5 absolute left-0 top-0 w-60 md:w-[400px] h-full"></div>
-        <div className="gradient2 absolute right-0 top-0 w-44 md:w-96 h-full"></div>
+        <div className="gradient5 absolute left-0 top-0 w-60 md:w-[300px] h-full"></div>
+        <div className="gradient2 absolute right-0 top-0 md:top-[11rem] -bottom-20 w-60 transform md:rotate-45 h-full"></div>
+        <div className="gradient2 absolute left-0 transform lg:rotate-90 lg:w-[11rem]  top-0 lg:-top-[152px] lg:left-48 w-44 md:w-[96] h-full"></div>
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="z-10">
             <h1 className="text-[32px] leading-[48px] lg:max-w-sm xl:max-w-lg capitalize font-semibold mb-6 pr-7 lg:pr-0 md:text-3xl lg:text-[40px]   lg:leading-[55px]">

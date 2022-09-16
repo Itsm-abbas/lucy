@@ -3,7 +3,14 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-const People = () => {
+const People = ({setShowUseDrop}) => {
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains("usecase")) {
+      setShowUseDrop(false);
+    } else {
+      setShowUseDrop(true);
+    }
+  };
   // Data array for the slider
   let data = [
     {
@@ -42,17 +49,19 @@ const People = () => {
       setIndex(0);
     }
   }, [index, peoples]);
-  useEffect(() => {
-    // let slider = setInterval(() => {
-    //   setIndex(index + 1);
-    // }, 5000);
-    // return () => {
-    //   clearInterval(slider);
-    // };
-  }, [index]);
+  // For automatic slider after interval
+  
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setIndex(index + 1);
+  //   }, 8000);
+  //   return () => {
+  //     clearInterval(slider);
+  //   };
+  // }, [index]);
   return (
     <>
-      <div className="section-center h-[65vh] sm:h-[75vh] md:h-[60vh] lg:h-[60vh] overflow-hidden font-Poppins sm:mx-10 md:mx-[72px] md:mt-[174px]  lg:mx-0  lg:mt-10">
+      <div onMouseOver={handleSubmenu} className="section-center h-[65vh] sm:h-[75vh] md:h-[60vh] lg:h-[60vh] overflow-hidden font-Poppins sm:mx-10 md:mx-[72px] md:mt-[174px]  lg:mx-0  lg:mt-10">
         <h1 className="font-semibold text-start px-10 sm:px-12 lg:pl-[310px] xl:pl-[400px] lg:mt-16 text-[28px] mt-10 md:mt-0 leadding-[42px] lg:text-[40px] ">
           People sweet words
         </h1>

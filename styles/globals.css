@@ -63,8 +63,8 @@ a {
 /* For gradient backgrounds */
 .gradient {
   position: absolute;
-  background: rgba(0, 191, 138, 0.4);
-  filter: blur(191px);
+  background: rgba(0, 191, 138, 0.2);
+  filter: blur(85px);
   
   
   /* transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0); */

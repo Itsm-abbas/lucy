@@ -2,10 +2,18 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const Recruitment = () => {
+const Recruitment = ({setShowUseDrop}) => {
+  
   const [interview, setinterview] = useState(false);
   const [dashboard, setDashboard] = useState(false);
   const [chat, setChat] = useState(false);
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains("usecase")) {
+      setShowUseDrop(false);
+    } else {
+      setShowUseDrop(true);
+    }
+  };
   // Click handler function for buttons
   const clickHandler = (e) => {
     let text = e.target.textContent;
@@ -28,9 +36,10 @@ const Recruitment = () => {
   }, []);
 
   return (
-    <div className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden">
+    <div onMouseOver={handleSubmenu} className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden">
       <div className="relative flex flex-col items-center text-[#191919]  ">
-        <div className="gradient h-full w-40 md:w-96 -left-20"></div>
+        <div className="gradient hidden lg:block h-[16rem] w-[19rem] top-60 left-12"></div>
+        <div className="gradient5 hidden lg:block absolute h-[16rem] w-[19rem] -left-28 top-44"></div>
         <p className="font-semibold text-[28px]  leading-[42px] text-center  md:text-[40px] md:leading-[60px] mb-6 ">
           Strong products for <br className="sm:hidden" /> your recruitment
         </p>
@@ -205,7 +214,7 @@ const Recruitment = () => {
       {/* bottom section */}
       <div className="pt-40 grid lg:grid-cols-2 relative">
         {/* gradient */}
-        <div className="gradient h-80  -right-96 rounded-full transform rotate-45 bottom-20 w-40 md:w-96 "></div>
+        <div className="gradient h-96  hidden lg:block -right-96 rounded-full  bottom-0 lg:w-[31rem] "></div>
         {/* gradient */}
         <div className="pb-20 px-7 sm:px-12 lg:px-0">
           <h2 className="text-[28px] pr-4 sm:pr-0  leading-[42px] md:text-[40px] z-10 font-semibold md:leading-[60px] mb-6 text-black">

@@ -2,9 +2,16 @@
 import Script from "next/script";
 import React from "react";
 
-const Expert = () => {
+const Expert = ({setShowUseDrop}) => {
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains("usecase")) {
+      setShowUseDrop(false);
+    } else {
+      setShowUseDrop(true);
+    }
+  };
   return (
-    <div className="bg-[#F2EDE4]   px-2 md:px-20 py-20 lg:px-52 font-Poppins">
+    <div onMouseOver={handleSubmenu} className="bg-[#F2EDE4]   px-2 md:px-20 py-20 lg:px-52 font-Poppins">
       <div className="w-full mb-16 text-[28px]  lg:text-[40px] font-semibold leading-[42px] lg:leading-[60px]">
         Experts says...
       </div>

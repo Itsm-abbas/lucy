@@ -18,12 +18,12 @@ export default function Home() {
         <link rel="icon" href="/images/icon.svg" />
       </Head>
       <Header showUseDrop={showUseDrop} setShowUseDrop={setShowUseDrop}/>
-      <Main showUseDrop={showUseDrop} setShowUseDrop={setShowUseDrop}/>
-      <Recruitment />
-      <Hire />
-      <People />
-      <Expert/>
-      <Footer />
+      <Main setShowUseDrop={setShowUseDrop}/>
+      <Recruitment setShowUseDrop={setShowUseDrop}/>
+      <Hire setShowUseDrop={setShowUseDrop}/>
+      <People setShowUseDrop={setShowUseDrop}/>
+      <Expert setShowUseDrop={setShowUseDrop}/>
+      <Footer setShowUseDrop={setShowUseDrop}/>
     </div>
   );
 }

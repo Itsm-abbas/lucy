@@ -8,7 +8,14 @@ import {
   FaLinkedin,
   FaChevronDown,
 } from "react-icons/fa";
-const Footer = () => {
+const Footer = ({setShowUseDrop}) => {
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains("usecase")) {
+      setShowUseDrop(false);
+    } else {
+      setShowUseDrop(true);
+    }
+  };
   const languages = [
     { id: 1, name: "English" },
     { id: 2, name: "Chinese" },
@@ -16,11 +23,11 @@ const Footer = () => {
   // Selected value stored in selected state
   const [selected, setSelected] = useState(languages[0]);
   return (
-    <footer>
+    <footer onMouseOver={handleSubmenu}>
       <div className="overflow-hidden relative w-full flex justify-center items-center bg-[#191919] text-white  font-Poppins ">
-        <div className="gradient absolute right-0 top-0 bottom-0 w-80 h-full transform rotate-45 rounded-full"></div>
-        <div className="gradient3 absolute bottom-0 right-0 w-[605.93px] h-[300.16px] rounded-full"></div>
-        <div className="gradient5 absolute -bottom-10 -left-40 w-[905.93px] h-[200.16px] rounded-full"></div>
+        <div className="gradient absolute right-0 lg:top-0 bottom-0 w-[120px] sm:w-[160px] h-[330px] md:w-[260px]  lg:w-60  transform lg:rotate-45 rounded-full"></div>
+        <div className="gradient3 w-[8rem] h-[20rem] rotate-90 right-[9rem] -bottom-28 absolute md:w-[30rem] md:rotate-0 md:h-[14rem] lg:right-0 lg:rotate-0 lg:bottom-0 lg:w-[39.93rem] lg:h-[112.16px] rounded-full"></div>
+        <div className="gradient5 absolute -bottom-10 -left-40 transform rotate-45 w-[440px] h-[210.16px] md:w-[38rem] lg:w-[43.93rem] lg:rotate-[196deg] lg:h-[210.16px] rounded-full"></div>
         <div className="text-center py-28 px-1 md:px-0 ">
           <h1 className="text-3xl md:text-4xl font-semibold mb-10">
             Get started with Lucy

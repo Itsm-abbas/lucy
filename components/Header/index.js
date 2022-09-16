@@ -71,11 +71,11 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
 
       {/* Use Case Dropdown desktop -- start */}
       <div
-        className={`usecase  grid-cols-3 gap-10 absolute top-full z-50 left-0 right-0 w-full  overflow-hidden shadow-xl transform ${
-          showUseDrop ? " md:grid" : "hidden"
-        } bg-white text-black py-14 hidden md:px-8 lg:px-20 2xl:px-40  transition-all duration-150`}
+        className={`usecase md:grid gap-10 grid-cols-3 absolute top-full z-50 left-0 right-0 w-full  overflow-hidden shadow-xl ${
+          showUseDrop ?  " h-80 py-14  md:px-8 lg:px-20 2xl:px-40" : "h-0"
+        } bg-white text-black  hidden   transition-all duration-500 ease-in-out`}
       >
-        <div className="usecase  flex flex-col gap-6">
+        <div className={`${!showUseDrop ? "hidden" : "flex"} usecase  flex-col gap-6 `}>
           <div className="usecase  flex gap-4 items-center px-3 py-4 rounded-lg hover:bg-[#C4F0004D] transition-all duration-200 cursor-pointer">
             <Image
               className="usecase"
@@ -99,7 +99,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
             <p className="usecase text-base lg:text-lg font-medium ">Founder Pitch Pool</p>
           </div>
         </div>
-        <div className="usecase flex flex-col gap-6">
+        <div className={`${!showUseDrop ? "hidden" : "flex"} usecase flex-col gap-6 `}>
           <div className="usecase flex gap-4 items-center px-3 py-4 rounded-lg hover:bg-[#C4F0004D] transition-all duration-200 cursor-pointer">
             <Image
               className="usecase"
@@ -125,7 +125,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
             </p>
           </div>
         </div>
-        <div className="usecase flex justify-end items-start">
+        <div className={`${!showUseDrop ? "hidden" : "flex"} usecase justify-end items-start `}>
           <Image
             width={129}
             height={165}
@@ -162,8 +162,8 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
       {/* Mobile navigation -- start */}
       <div
         className={`${
-          showNavMbl ? "h-auto py-7" : "h-0  "
-        } z-50 transition-all duration-200 absolute md:hidden  text-black px-5  top-full left-0 right-0 bg-white overflow-hidden`}
+          showNavMbl ? `${showUseMbl ? "h-[750px] py-7":"h-96 py-7"} ` : "h-0  "
+        } z-50 transition-all duration-300 absolute md:hidden  text-black px-5  top-full left-0 right-0 bg-white overflow-hidden`}
       >
         {/* Mobile header links -- start */}
         <ul className="flex flex-col text-[22px]">
@@ -184,8 +184,8 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
             {/*Mobile Use case dropdown */}
             <ul
               className={`${
-                showUseMbl ? "h-auto py-2" : "h-0"
-              } transition-all duration-150 overflow-hidden flex flex-col text-[18px] `}
+                showUseMbl ? "h-80 sm:h-72 py-2" : "h-0"
+              } transition-all duration-500 overflow-hidden flex flex-col text-[18px] `}
             >
               <li className="p-[20px] hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
                 <Image
