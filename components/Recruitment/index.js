@@ -32,7 +32,7 @@ const Recruitment = () => {
       <div className="relative flex flex-col items-center text-[#191919]  ">
         <div className="gradient h-full w-40 md:w-96 "></div>
         <p className="font-semibold text-[28px]  leading-[42px] text-center  md:text-[40px] md:leading-[60px] mb-6 ">
-          Strong products for <br className="sm:hidden" /> your recruitments
+          Strong products for <br className="sm:hidden" /> your recruitment
         </p>
         <p className="mb-12 font-medium text-[18px] px-14 text-center leading-[27px]">
           Get back 60% of your time you&apos;re now spending on recruiting and
