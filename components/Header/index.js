@@ -163,10 +163,10 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
       <div
         className={`${
           showNavMbl ? `${showUseMbl ? "h-[750px] py-7":"h-96 py-7"} ` : "h-0  "
-        } z-50 transition-all duration-300 absolute md:hidden  text-black px-5  top-full left-0 right-0 bg-white overflow-hidden`}
+        } z-50 transition-all duration-300 absolute shadow-2xl md:hidden  text-black px-5  top-full left-0 right-0 bg-white overflow-hidden`}
       >
         {/* Mobile header links -- start */}
-        <ul className="flex flex-col text-[22px]">
+        <ul className="flex flex-col text-[22px] ">
           <li className="py-4 capitalize border-b border-gray-400   ">
             <Link href={"/"}>
               <a className="capitalize hover:text-green-600 px-4 border-gray-400">
