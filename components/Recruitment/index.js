@@ -30,7 +30,7 @@ const Recruitment = () => {
   return (
     <div className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden">
       <div className="relative flex flex-col items-center text-[#191919]  ">
-        <div className="gradient h-full w-40 md:w-96 "></div>
+        <div className="gradient h-full w-40 md:w-96 -left-20"></div>
         <p className="font-semibold text-[28px]  leading-[42px] text-center  md:text-[40px] md:leading-[60px] mb-6 ">
           Strong products for <br className="sm:hidden" /> your recruitment
         </p>
@@ -144,13 +144,13 @@ const Recruitment = () => {
           </p>
           <div className=" overflow-hidden relative">
             <img
-              className="w-full h-40 sm:h-44 lg:h-72 object-cover md:h-auto"
+              className="w-full h-40 sm:h-44 lg:h-[350px] object-cover md:h-auto rounded-tl-2xl"
               src={"/images/main-img_6.webp"}
               alt="bg-img"
             />
             <div className="absolute top-2/3 left-[40%]">
               <img
-                className="w-25 h-25 lg:w-[50px] lg:h-[50px]"
+                className="w-25 h-25 lg:w-[40px] lg:h-[40px]"
                 src={"/images/player-icon.svg"}
                 alt="player"
               />
