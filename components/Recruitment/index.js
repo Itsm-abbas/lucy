@@ -28,21 +28,23 @@ const Recruitment = () => {
   }, []);
 
   return (
-    <div className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 xl:px-[240px] xl:pt-[120px] font-Poppins font-semibold overflow-hidden">
+    <div className="bg-[#F2EDE4] pt-20 px-4 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden">
       <div className="relative flex flex-col items-center text-[#191919]  ">
         <div className="gradient h-full w-40 md:w-96 "></div>
-        <h1 className="text-3xl md:text-[40px] leading-[60px] mb-6 font-semibold">Strong products for your recruitments</h1>
-        <p className="mb-12 font-medium text-[18px] leading-[27px]">
+        <p className="font-semibold text-[28px]  leading-[42px] text-center  md:text-[40px] md:leading-[60px] mb-6 ">
+          Strong products for <br className="sm:hidden" /> your recruitments
+        </p>
+        <p className="mb-12 font-medium text-[18px] px-14 text-center leading-[27px]">
           Get back 60% of your time you&apos;re now spending on recruiting and
           busywork.
         </p>
         {/* Buttons -- start */}
-        <div className="bg-[#191919] w-[350px] md:w-[410px] lg:w-[472px] lg:h-[58px] py-1 px-1 rounded-[36px] flex justify-between items-center mb-28 z-20">
+        <div className="bg-[#191919] h-[58px] w-[382px] sm:w-[472px] py-1 px-2 rounded-[36px] flex justify-between items-center mb-28 z-20">
           <button
             onClick={(e) => clickHandler(e)}
             className={`${
               interview ? "bg-white text-black" : ""
-            }  rounded-[36px] hover:bg-white hover:text-black text-white px-3 py-1 w-[148px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
+            }  rounded-[36px] text-white hover:bg-white hover:text-black  w-[148px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
           >
             AI interview
           </button>
@@ -50,7 +52,7 @@ const Recruitment = () => {
             onClick={(e) => clickHandler(e)}
             className={`${
               dashboard ? "bg-white text-black" : ""
-            }  rounded-[36px] text-white hover:bg-white hover:text-black px-8 py-1 w-[148px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
+            }  rounded-[36px] text-white hover:bg-white hover:text-black  w-[148px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
           >
             ATS
           </button>
@@ -58,24 +60,23 @@ const Recruitment = () => {
             onClick={(e) => clickHandler(e)}
             className={`${
               chat ? "bg-white text-black" : ""
-            } text-white rounded-[36px] hover:bg-white hover:text-black px-8 py-1 w-[148px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
+            } text-white rounded-[36px] hover:bg-white hover:text-black  w-[148px] mt-[7px] mb-[7px] h-[44px] `}
           >
             Chat
           </button>
         </div>
         {/* Buttons -- end */}
-
       </div>
       {/* First slide (Ai interview) -- start */}
       {interview && (
         <div className="relative  bg-white  border-l-8 h-full border-black border-t-8 border-r-8 rounded-br-none rounded-bl-none border-solid  rounded-2xl w-full px-5 md:px-16 pt-12  ">
-          <div className="absolute -right-10 top-60 lg:-top-8 z-10">
+          <div className="absolute -right-10 top-60 lg:-top-16 lg:-right-24 z-10">
             <img
-              className="rounded-xl w-48 h-full lg:w-[350px]  xl:w-[450px]"
-              src={"/images/main-img_7.webp"}
+              className="rounded-xl w-48 h-full lg:w-[350px]  xl:w-[500.96px]  "
+              src={"/images/main-img_7.svg"}
               alt="img"
             />
-            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            {/* <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <img
                 className="w-5 h-full lg:w-8 "
                 src={"/images/player-icon.svg"}
@@ -96,15 +97,15 @@ const Recruitment = () => {
                   Graphic Designer
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="absolute -right-10 top-[360px] lg:top-48 xl:top-64 z-10">
+          <div className="absolute -right-10 top-[360px]  lg:-right-24 lg:top-48 xl:top-64 z-10">
             <img
-              className="rounded-xl w-48 h-full  lg:w-[350px]  xl:w-[450px] "
-              src={"/images/main-img_8.webp"}
+              className="rounded-xl w-48 h-full  lg:w-[350px]  xl:w-[500.96px] "
+              src={"/images/main-img_8.svg"}
               alt="img"
             />
-            <div className="absolute bottom-3 right-7 lg:right-5">
+            {/* <div className="absolute bottom-3 right-7 lg:right-5">
               <img
                 className="w-5 h-full lg:w-8 "
                 src={"/images/volume-icon.svg"}
@@ -125,9 +126,9 @@ const Recruitment = () => {
                   Graphic Designer
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
-          <h1 className="font-medium text-xl md:text-2xl mb-6  border-gray-500 border-b-[1px] pb-5">
+          <h1 className="font-semibold text-xl md:text-2xl mb-6  border-gray-500 border-b-[1px] pb-5">
             AP Company - Project Manager
           </h1>
           <h1 className="font-medium text-[12px] md:text-lg lg:text-2xl mb-8 flex items-center">
@@ -143,15 +144,14 @@ const Recruitment = () => {
           </p>
           <div className=" overflow-hidden relative">
             <img
-              className="w-full h-48 md:h-auto"
+              className="w-full h-40 sm:h-44 lg:h-72 object-cover md:h-auto"
               src={"/images/main-img_6.webp"}
               alt="bg-img"
             />
-            <div className="absolute top-2/3 left-1/3">
-              <Image
+            <div className="absolute top-2/3 left-[40%]">
+              <img
+                className="w-25 h-25 lg:w-[50px] lg:h-[50px]"
                 src={"/images/player-icon.svg"}
-                width={50}
-                height={50}
                 alt="player"
               />
             </div>
@@ -197,8 +197,6 @@ const Recruitment = () => {
               src={"/images/chat-2.webp"}
               alt="dashbaord_2"
             />
-           
-          
           </div>
         </div>
       )}
@@ -209,26 +207,28 @@ const Recruitment = () => {
         {/* gradient */}
         <div className="gradient h-80  -right-96 rounded-full transform rotate-45 bottom-20 w-40 md:w-96 "></div>
         {/* gradient */}
-        <div className="pb-20 ">
-          <h2 className="text-3xl md:text-[40px] z-10 font-semibold leading-[60px] mb-6 text-black">
+        <div className="pb-20 px-7 sm:px-12 lg:px-0">
+          <h2 className="text-[28px] pr-4 sm:pr-0  leading-[42px] md:text-[40px] z-10 font-semibold md:leading-[60px] mb-6 text-black">
             Automated recruiting process help you to focus on what matters the
             most
           </h2>
-          <p className="text-sm md:text-[18px] z-10 leading-[27px] font-medium mb-14">
+          <p className="text-lg z-10 leading-[27px] font-medium mb-14">
             From director labors to executives, Lucy transforms how you screen,
             interview and hire talent.
           </p>
-          <button className="btn-black px-6 z-10">Try Lucy Free</button>
+          <button className="btn-black h-[48px] w-[173px] text-[14px] rounded-[5px] tracking-[.1rem]">
+            Try Lucy Free
+          </button>
         </div>
         <div className="relative max-w-sm flex justify-start">
           <div className="h-full flex">
             <img
-              className="z-10 w-[270px] h-[290px]  md:w-[335px] md:h-[360px]"
+              className="z-10 w-[270px] h-[290px]  md:w-[335px] md:h-[360px] lg:absolute lg:bottom-0"
               src={"/images/mbl-img.webp"}
               alt="mbl-img"
             />
           </div>
-          <div className="absolute top-2 -right-14 lg:top-4  md:-right-40 lg:-right-30 ">
+          <div className="absolute top-2 -right-14  md:-right-40 lg:-right-30  lg:bottom-11 lg:top-auto ">
             <img
               className="w-[270px] h-[240px] md:w-[335px] md:h-[300px]"
               src={"/images/mbl-img_2.webp"}

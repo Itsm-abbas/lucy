@@ -5,8 +5,8 @@ const Hire = () => {
   return (
     <div className="relative px-6 md:px-10 lg:px-20 py-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
       <div className="">
-        <h2 className="text-3xl lg:text-4xl font-semibold mb-8">
-          Hire smarter, not harder
+        <h2 className="text-[28px] font-semibold leading-[42px] mb-8 lg:text-[40px] lg:leading-[60px]  ">
+          Hire smarter, <br className="sm:hidden"/> not harder
         </h2>
         <p className="text-[18px] font-medium leading-[27px]">
           With Lucy on your side, you&apos;ll find the best candidates in no
@@ -17,13 +17,13 @@ const Hire = () => {
           {/* Anchor tags -- start */}
           <div className="w-full h-[1px] bg-black mt-16 lg:mt-[120px]  mb-10 lg:mb-[65px]"></div>
           <a
-            className="text-[#1743D7] text-sm lg:text-base flex items-center hover:text-black"
+            className="text-[#1743D7] text-sm lg:text-[18px] mb-4 flex items-center hover:text-black"
             href=""
           >
             Best Ways To Attract Quality Hires &nbsp; <FaArrowRight />
           </a>
           <a
-            className="text-[#1743D7] text-sm lg:text-base flex items-center hover:text-black"
+            className="text-[#1743D7] text-sm lg:text-[18px] flex items-center hover:text-black"
             href=""
           >
             End-to-End AI Video Interview Platform &nbsp; <FaArrowRight />
@@ -42,7 +42,7 @@ const Hire = () => {
             />
           </div>
           <h2 className="text-2xl lg:text-[36px] font-semibold mb-3 leading-[54px]">Millions</h2>
-          <p className="text-base lg:text-lg text-[#696969]">
+          <p className="text-base lg:text-[22px] text-[#696969]">
             Job opportunities sent
           </p>
         </div>

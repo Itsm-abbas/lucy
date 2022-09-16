@@ -65,7 +65,14 @@ a {
   position: absolute;
   background: rgba(0, 191, 138, 0.4);
   filter: blur(191px);
+  
+  
   /* transform: matrix(0.87, 0.26, -0.6, 0.95, 0, 0); */
+}
+.gradient5{
+  background: radial-gradient(81.03% 68.06% at 46.31% 47.54%, rgba(196, 240, 0, 0.094) 0%, rgba(196, 240, 0, 0) 100%);
+  filter: blur(60px);
+
 }
 
 .gradient2 {
@@ -92,12 +99,13 @@ transform: rotate(170.56deg);
   max-width: 100%;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .article {
   opacity: 0;
   transition: .3s all;
+  margin: 0 auto;
 }
 
 /* For slides */
