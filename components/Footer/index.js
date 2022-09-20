@@ -28,7 +28,7 @@ const Footer = ({setShowUseDrop}) => {
         <div className="gradient absolute right-0 lg:top-0 bottom-0 w-[120px] sm:w-[160px] h-[330px] md:w-[260px]  lg:w-60  transform lg:rotate-45 rounded-full"></div>
         <div className="gradient3 w-[8rem] h-[20rem] rotate-90 right-[9rem] -bottom-28 absolute md:w-[30rem] md:rotate-0 md:h-[14rem] lg:right-0 lg:rotate-0 lg:bottom-0 lg:w-[39.93rem] lg:h-[112.16px] rounded-full"></div>
         <div className="gradient5 absolute -bottom-10 -left-40 transform rotate-45 w-[440px] h-[210.16px] md:w-[38rem] lg:w-[43.93rem] lg:rotate-[196deg] lg:h-[210.16px] rounded-full"></div>
-        <div className="text-center py-28 px-1 md:px-0 ">
+        <div className="text-center py-28 px-9 md:px-0 ">
           <h1 className="text-3xl md:text-4xl font-semibold mb-10">
             Get started with Lucy
           </h1>
@@ -167,7 +167,7 @@ const Footer = ({setShowUseDrop}) => {
           </div>
         </div>
         <div className=" flex justify-center items-center py-8">
-          Copyright © 2022 Norby Inc.
+        Copyright © 2022 Lucy Limited
         </div>
       </div>
     </footer>

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 
@@ -103,11 +102,40 @@ transform: rotate(170.56deg);
 }
 
 .article {
+  position: relative;
   opacity: 0;
   transition: .3s all;
   margin: 0 auto;
 }
-
+.article::before{
+  content: "";
+  position: absolute;
+  left: -280px;
+  bottom: 0;
+  background: url('/images/slider-black-img.svg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+}
+@media screen and (max-width:1020px) {
+  .article::before{
+    display: none;
+  }
+}
+@media screen and (min-width:1300px) {
+  .article::before{
+    content: "";
+    position: absolute;
+    left: -340px;
+    bottom: 1rem;
+    background: url('/images/slider-black-img.svg');
+    background-size: cover;
+    background-position: center center;
+    height: 330px;
+    width: 400px;
+  }
+}
 /* For slides */
 .activeSlide {
   transform: translateX(0);

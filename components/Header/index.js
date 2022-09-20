@@ -162,32 +162,32 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
       {/* Mobile navigation -- start */}
       <div
         className={`${
-          showNavMbl ? `${showUseMbl ? "h-[750px] py-7":"h-96 py-7"} ` : "h-0  "
-        } z-50 transition-all duration-300 absolute shadow-2xl md:hidden  text-black px-5  top-full left-0 right-0 bg-white overflow-hidden`}
+          showNavMbl ? `${showUseMbl ? "h-[750px] py-7":"h-96 py-4"} ` : "h-0  "
+        } z-50 transition-all duration-300 absolute shadow-2xl md:hidden  text-black px-4  top-full left-0 right-0 bg-white overflow-hidden`}
       >
         {/* Mobile header links -- start */}
         <ul className="flex flex-col text-[22px] ">
-          <li className="py-4 capitalize border-b border-gray-400   ">
+          <li className="p-5 capitalize border-b border-gray-400   ">
             <Link href={"/"}>
-              <a className="capitalize hover:text-green-600 px-4 border-gray-400">
+              <a className="capitalize hover:text-green-600  border-gray-400">
                 why us
               </a>
             </Link>
           </li>
-          <li className="capatalize   border-b py-4 border-gray-400">
+          <li className="capatalize     ">
             <button
               onClick={() => setShowUseMbl(!showUseMbl)}
-              className="hover:text-green-600 h-full w-full px-4 flex items-center justify-between capitalize"
+              className="hover:text-green-600 h-full p-5 w-full border-b border-gray-400  flex items-center justify-between capitalize"
             >
               use cases <FaChevronDown className="mr-4" />
             </button>
             {/*Mobile Use case dropdown */}
             <ul
               className={`${
-                showUseMbl ? "h-80 sm:h-72 py-2" : "h-0"
+                showUseMbl ? "h-80 sm:h-72" : "h-0"
               } transition-all duration-500 overflow-hidden flex flex-col text-[18px] `}
             >
-              <li className="p-[20px] hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
+              <li className="p-[20px] cursor-pointer hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
                 <Image
                   src={"/images/submenu-icon.svg"}
                   height={32}
@@ -196,7 +196,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
                 />{" "}
                 Asynchronous interview from SMB to Entreprise
               </li>
-              <li className="p-[20px] hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
+              <li className="p-[20px] cursor-pointer hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
                 <Image
                   src={"/images/submenu-icon-2.svg"}
                   height={32}
@@ -205,7 +205,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
                 />{" "}
                 Model Management Company
               </li>
-              <li className="p-[20px] hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
+              <li className="p-[20px] cursor-pointer hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
                 <Image
                   src={"/images/submenu-icon-3.svg"}
                   height={32}
@@ -214,7 +214,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
                 />{" "}
                 Founder Pitch Pool
               </li>
-              <li className="p-[20px] hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
+              <li className="p-[20px] cursor-pointer hover:bg-[#C4F0004D] rounded-md flex items-center gap-4">
                 {" "}
                 <Image
                   src={"/images/submenu-icon-4.svg"}
@@ -226,19 +226,19 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
               </li>
             </ul>
           </li>
-          <li className="capitalize  border-b py-4 border-gray-400  ">
+          <li className="capitalize  border-b p-5 border-gray-400  ">
             <Link href={"/"}>
-              <a className="capitalize px-4 hover:text-green-600">pricing</a>
+              <a className="capitalize  hover:text-green-600">pricing</a>
             </Link>
           </li>
-          <li className="capitalize  border-b py-4 border-gray-400  ">
+          <li className="capitalize  border-b p-5 border-gray-400  ">
             <Link href={"/"}>
-              <a className="capitalize px-4 hover:text-green-600">Sign In</a>
+              <a className="capitalize  hover:text-green-600">Sign In</a>
             </Link>
           </li>
-          <li className="capitalize  py-4  ">
+          <li className="capitalize  p-5  ">
             <Link href={"/"}>
-              <a className="capitalize px-4 hover:text-green-600">
+              <a className="capitalize  hover:text-green-600">
                 Try Lucy Free
               </a>
             </Link>

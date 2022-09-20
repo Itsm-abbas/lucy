@@ -61,8 +61,8 @@ const People = ({setShowUseDrop}) => {
   // }, [index]);
   return (
     <>
-      <div onMouseOver={handleSubmenu} className="section-center h-[65vh] sm:h-[75vh] md:h-[60vh] lg:h-[60vh] overflow-hidden font-Poppins sm:mx-10 md:mx-[72px] md:mt-[174px]  lg:mx-0  lg:mt-10">
-        <h1 className="font-semibold text-start px-10 sm:px-12 lg:pl-[310px] xl:pl-[400px] lg:mt-16 text-[28px] mt-10 md:mt-0 leadding-[42px] lg:text-[40px] ">
+      <div onMouseOver={handleSubmenu} className="section-center h-[65vh] sm:h-[75vh] md:h-[60vh] lg:h-[60vh] xl:h-[75vh] overflow-hidden font-Poppins sm:mx-10 md:mx-[72px] md:mt-[174px]  lg:mx-0  lg:mt-10">
+        <h1 className="font-semibold absolute left-1/2 transform translate-x-[-50%] text-center w-full  lg:mt-16 text-[28px] mt-10 md:mt-0 leadding-[42px] lg:text-[40px] ">
           People sweet words
         </h1>
         {peoples.map((people, peopleIndex) => {
@@ -84,7 +84,7 @@ const People = ({setShowUseDrop}) => {
             >
               <div className="flex items-center">
                 <img
-                  className="image h-[100px] w-[100px] lg:h-[300px] lg:w-[300px] object-cover  rounded-bl-[30px] rounded-t-[120px] z-20 mr-8 lg:mr-14"
+                  className="image h-[100px] w-[100px] lg:h-[300px] lg:w-[300px] xl:h-[400px] xl:w-[500px] object-cover  rounded-bl-[30px] rounded-t-[120px] z-20 mr-8 lg:mr-14"
                   src={img}
                   alt={name}
                 />
@@ -97,30 +97,23 @@ const People = ({setShowUseDrop}) => {
                   </h4>
                 </div>
               </div>
-              <div className="text-start  py-11 px-6 lg:px-10  ">
+              <div className="text-start  py-11 px-6 lg:pl-[76px] lg:pr-[67px] lg:pt-[74px] lg:pb-[80px]  ">
                 <p className="font-medium text-[20px] lg:text-[20px] leading-[30px] ">
                   {words}
                 </p>
               </div>
-              <div className="absolute right-10 bottom-4 text-start hidden lg:flex flex-col">
+              <div className="hidden absolute right-10 bottom-4 text-start  lg:flex flex-col">
                 <p className=" text-[#19191966] font-semibold">{post}</p>
                 <h4 className="font-semibold italic">{name}</h4>
               </div>
             </article>
           );
         })}
-        <div className="hidden xl:block absolute  -left-16 -bottom-5">
-          <Image
-            src="/images/slider-black-img.svg"
-            width={300}
-            height={300}
-            alt="black image"
-          />
-        </div>
+       
         {/* Arrow button */}
         <button
           onClick={() => setIndex(index + 1)}
-          className="absolute top-72 md:top-36 z-30 right-4 lg:right-36 cursor-pointer  bg-black text-white rounded-full p-3"
+          className="absolute top-72 md:top-36 z-30 right-4 lg:right-36 xl:right-36 xl:top-60 cursor-pointer  bg-black text-white rounded-full p-3"
         >
           <HiOutlineArrowNarrowRight className="text-xl md:text-3xl font-bold"></HiOutlineArrowNarrowRight>
         </button>
