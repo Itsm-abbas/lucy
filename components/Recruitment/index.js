@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import {BsCameraVideo} from 'react-icons/bs'
 
 const Recruitment = ({ setShowUseDrop }) => {
   const [interview, setinterview] = useState(false);
@@ -237,15 +238,18 @@ const Recruitment = ({ setShowUseDrop }) => {
             Try Lucy Free
           </button>
         </div>
-        <div className="relative max-w-sm flex justify-start">
-          <div className="h-full flex">
+        <div className="h-[45vh] md:h-auto  relative max-w-sm flex justify-start">
+          <div className="absolute -left-16 md:-left-0 md:static h-full flex">
             <img
               className="z-10 w-[270px] h-[290px]  md:w-[335px] md:h-[360px] lg:absolute lg:bottom-0"
               src={"/images/mbl-img.webp"}
               alt="mbl-img"
             />
+            <button className="absolute flex items-center text-sm gap-[10px] md:text-base bottom-8 md:bottom-12 py-[10px] px-[16px] right-14 md:right-[122px] btn-black z-30">
+             <BsCameraVideo/> Answer
+            </button>
           </div>
-          <div className="absolute top-2 -right-14  md:-right-40 lg:-right-30  lg:bottom-11 lg:top-auto ">
+          <div className="absolute top-2 right-4  md:-right-40 lg:-right-30  lg:bottom-11 lg:top-auto ">
             <img
               className="w-[270px] h-[240px] md:w-[335px] md:h-[300px]"
               src={"/images/mbl-img_2.webp"}
