@@ -39,7 +39,7 @@ const Recruitment = ({ setShowUseDrop }) => {
     <>
       <div
         onMouseOver={handleSubmenu}
-        className="bg-[#F2EDE4] pt-[88px] px-9 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden xl:pl-[240px] xl:pr-[240px]"
+        className="bg-[#F2EDE4] pt-[88px] px-9 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden xl:px-[240px] "
       >
         <div className="relative flex flex-col items-center text-[#191919] ">
           <div className="gradient hidden lg:block h-[16rem] w-[19rem] top-60 left-12"></div>
@@ -52,12 +52,12 @@ const Recruitment = ({ setShowUseDrop }) => {
             busywork.
           </p>
           {/* Buttons -- start */}
-          <div className="bg-[#191919] h-[58px] w-[382px] sm:w-[472px] py-1 px-2 rounded-[36px] flex justify-between items-center mb-28 z-20">
+          <div className="bg-[#191919] h-[58px] w-[332px] sm:w-[472px] py-1 px-2 rounded-[36px] flex justify-between items-center mb-28 z-20">
             <button
               onClick={(e) => clickHandler(e)}
               className={`${
                 interview ? "bg-white text-black" : ""
-              }  rounded-[36px] text-white hover:bg-white hover:text-black  w-[148px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
+              }  rounded-[36px] text-white hover:bg-white hover:text-black  w-[160px] mr-[6px] mt-[7px] mb-[7px] h-[44px] `}
             >
               AI interview
             </button>
@@ -83,7 +83,7 @@ const Recruitment = ({ setShowUseDrop }) => {
         {/* First slide (Ai interview) -- start */}
         {interview && (
           <div className="relative  bg-white border-l-4 border-t-4 border-r-4  md:border-l-8 md:border-t-8 md:border-r-8 rounded-br-none rounded-bl-none h-full border-black  border-solid  rounded-2xl w-full px-5 md:px-16 pt-12 ">
-            <div className="absolute -right-10 top-60 lg:-top-16 lg:-right-60 z-10">
+            <div className="absolute -right-10 top-60 lg:-top-16  lg:-right-24 xl:-right-60 z-10">
               <img
                 className="rounded-xl w-48 h-full lg:w-[350px]  xl:w-[430.96px]  "
                 src={"/images/main-img_7.svg"}
@@ -112,7 +112,7 @@ const Recruitment = ({ setShowUseDrop }) => {
               </div>
             </div> */}
             </div>
-            <div className="absolute -right-10 top-[360px]  lg:-right-24 lg:top-48 xl:top-64 xl:-right-60 z-10">
+            <div className="absolute -right-10 top-[360px]  lg:-right-24 lg:top-40 xl:top-52 xl:-right-60 z-10">
               <img
                 className="rounded-xl w-48 h-full  lg:w-[350px]  xl:w-[430.96px]"
                 src={"/images/main-img_8.svg"}
@@ -157,7 +157,7 @@ const Recruitment = ({ setShowUseDrop }) => {
             </p>
             <div className=" overflow-hidden relative">
               <img
-                className=" h-[250px] w-[250px] object-cover sm:h-44 lg:w-full lg:h-[350px] md:h-auto rounded-tl-2xl"
+                className=" h-[250px] w-[450px] object-cover sm:h-66 sm:w-[550px]  md:h-auto md:w-[690px] lg:w-full lg:h-[350px]  rounded-tl-2xl"
                 src={"/images/main-img_6.webp"}
                 alt="bg-img"
               />
@@ -183,16 +183,16 @@ const Recruitment = ({ setShowUseDrop }) => {
         {/* 2nd slide (Dashboard) -- start */}
         {dashboard && (
           <div className=" bg-img-dashboard h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
-            <div className="absolute -bottom-0 left-[calc(100%-85%)]">
+            <div className="absolute bottom-12 sm:bottom-4 md:bottom-16 xl:bottom-20 left-[calc(100%-85%)]">
               <img
-                className="w-48 h-full md:w-80 lg:w-96 xl:w-[480px]"
+                className="w-48 h-full md:w-80 lg:w-[410px] xl:w-[480px] shadow-sm"
                 src={"/images/dashboard_2.svg"}
                 alt="dashbaord_2"
               />
             </div>
-            <div className="absolute top-16 -right-8 md:top-6 lg:-top-24 lg:-bottom-20 xl:-top-5 md:-right-28 xl:-right-48">
+            <div className="absolute top-16 sm:top-0 -right-8 md:top-20 lg:-top-0 lg:-bottom-20 xl:top-12 md:-right-28 xl:-right-60">
               <img
-                className="w-full h-44 md:w-60 md:h-96 lg:w-72 lg:h-[600px] xl:h-[700px] xl:w-[350px] "
+                className="w-full h-44 sm:h-72 md:w-60 md:h-96 lg:w-72 lg:h-[600px] xl:h-[550px] xl:w-[370px] "
                 src={"/images/dashboard_3.webp"}
                 alt="dashbaord_2"
               />
@@ -219,7 +219,7 @@ const Recruitment = ({ setShowUseDrop }) => {
       </div>
       <div
         onMouseOver={handleSubmenu}
-        className="pt-40 grid lg:grid-cols-2 relative bg-[#F2EDE4] px-4 md:px-16 lg:px-28 xl:pt-[120px] font-Poppins font-semibold overflow-hidden"
+        className="pt-40 grid lg:grid-cols-2 relative bg-[#F2EDE4] px-4 md:px-16 lg:px-28 xl:px-[240px] xl:pt-[302px] font-Poppins font-semibold overflow-hidden"
       >
         {/* gradient */}
         <div className="gradient h-96  hidden lg:block -right-96 rounded-full  bottom-0 lg:w-[31rem] "></div>
@@ -238,16 +238,14 @@ const Recruitment = ({ setShowUseDrop }) => {
             Try Lucy Free
           </button>
         </div>
-        <div className="h-[45vh] md:h-auto  relative max-w-sm flex justify-start">
-          <div className="absolute -left-16 md:-left-0 md:static h-full flex">
+        <div className="h-72 md:h-auto  relative max-w-sm flex justify-start">
+          <div className="absolute -left-16 bottom-0 md:-left-0 md:static h-full flex">
             <img
               className="z-10 w-[270px] h-[290px]  md:w-[335px] md:h-[360px] lg:absolute lg:bottom-0"
-              src={"/images/mbl-img.webp"}
+              src={"/images/mbl-img.png"}
               alt="mbl-img"
             />
-            <button className="absolute flex items-center text-sm gap-[10px] md:text-base bottom-8 md:bottom-12 py-[10px] px-[16px] right-14 md:right-[122px] btn-black z-30">
-             <BsCameraVideo/> Answer
-            </button>
+           
           </div>
           <div className="absolute top-2 right-4  md:-right-40 lg:-right-30  lg:bottom-11 lg:top-auto ">
             <img

@@ -11,7 +11,7 @@ const Main = ({ setShowUseDrop }) => {
   };
   return (
     <main onMouseOver={handleSubmenu}>
-      <div className="relative h-[90vh] md:h-auto bg-[#19181A] text-white pt-56 lg:pt-60 md:pt-42  lg:pb-0 pl-8 md:pl-16 lg:pl-28  2xl:px-44 pb-0 font-Poppins overflow-hidden">
+      <div className="relative h-[72vh] md:h-auto bg-[#19181A] text-white pt-56 lg:pt-60 md:pt-42  lg:pb-0 pl-8 md:pl-16 lg:pl-28  2xl:px-44 pb-0 font-Poppins overflow-hidden">
         <div className="gradient5 absolute left-0 top-0 w-60 md:w-[300px] h-full"></div>
         <div className="gradient2 absolute right-0 top-0 md:top-[11rem] -bottom-20 w-60 transform md:rotate-45 h-full"></div>
         <div className="gradient2 absolute left-0 transform lg:rotate-90 lg:w-[11rem]  top-0 lg:-top-[152px] lg:left-48 w-44 md:w-[96] h-full"></div>
@@ -29,7 +29,7 @@ const Main = ({ setShowUseDrop }) => {
               Try Lucy Free
             </button>
           </div>
-          <div className=" md:relative w-[600px]  md:w-[1200px] lg:w-[800px] md:h-[22rem] lg:h-[24rem] ">
+          <div className=" md:relative w-[600px] h-[22rem]  md:w-[1200px] lg:w-[800px] md:h-[22rem] lg:h-[24rem] ">
             {/* <div class="relative flex items-center justify-center h-full w-[44rem] mb-12 overflow-hidden"> */}
             <video
               loop
@@ -57,10 +57,10 @@ const Main = ({ setShowUseDrop }) => {
         </div>
       </div>
       {/* **** */}
-      <div className="grid overflow-hidden lg:grid-cols-5 gap-12 md:gap-20     py-20 lg:py-28 2xl:pl-40 font-Poppins">
-        <div className="pr-8 md:pr-0 md:col-span-2">
-          <p className="text-[28px] pl-10 sm:pl-14 md:pl-16 sm:text-[32px] max-w-sm sm:max-w-md md:max-w-lg leading-[42px] sm:leading-[48px] md:text-3xl lg:text-[40px] md:leading-[60px] text-[#191919] font-semibold ">
-            Trusted by forward-thinking companies who value ease of use over
+      <div className="grid overflow-hidden lg:grid-cols-5 gap-12 md:gap-20 py-20 lg:py-28 2xl:pl-40 font-Poppins">
+        <div className="pr-8 md:pr-0 md:col-span-3">
+          <p className="text-[28px] pl-10 sm:pl-14 md:pl-16 sm:text-[32px] max-w-sm sm:max-w-xl lg:max-w-6xl   leading-[42px] sm:leading-[48px] md:text-[32px] lg:text-[40px] md:leading-[60px] text-[#191919] font-semibold ">
+            Trusted by forward-thinking <br/> companies who value ease of use over
             complexity
           </p>
         </div>

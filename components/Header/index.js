@@ -19,7 +19,7 @@ const Header = ({ showUseDrop, setShowUseDrop }) => {
   return (
     <header
       onMouseOver={handleSubmenu}
-      className="fixed h-[116px] lg-[109px] flex z-50 right-0 left-0 justify-between items-center text-white px-8  lg:px-20 2xl:px-40  2xl:h-24 bg-[#191919] font-Poppins shadow-xl"
+      className="fixed h-[96px] lg-[109px] flex z-50 right-0 left-0 justify-between items-center text-white px-8  lg:px-20 2xl:px-40  2xl:h-24 bg-[#191919] font-Poppins shadow-xl"
     >
       <div className="flex justify-between items-center w-28 h-8  ">
         <Image

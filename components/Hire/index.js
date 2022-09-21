@@ -10,8 +10,8 @@ const Hire = ({setShowUseDrop}) => {
     }
   };
   return (
-    <div onMouseOver={handleSubmenu} className="relative px-6 md:px-10 lg:px-20 py-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
-      <div className="">
+    <div onMouseOver={handleSubmenu} className="relative px-6 md:px-[72px] lg:px-20 py-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
+      <div>
         <h2 className="text-[28px] font-semibold leading-[42px] mb-8 lg:text-[40px] lg:leading-[60px]  ">
           Hire smarter, <br></br> not harder
         </h2>
@@ -49,7 +49,7 @@ const Hire = ({setShowUseDrop}) => {
             />
           </div>
           <h2 className="text-2xl lg:text-[36px] font-semibold mb-3 leading-[54px]">Millions</h2>
-          <p className="text-base lg:text-[22px] text-[#696969]">
+          <p className="text-base lg:text-lg text-[#696969]">
             Job opportunities sent
           </p>
         </div>
