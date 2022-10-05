@@ -10,7 +10,7 @@ const Hire = ({setShowUseDrop}) => {
     }
   };
   return (
-    <div onMouseOver={handleSubmenu} className="relative px-6 md:px-[72px] lg:px-20 py-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
+    <div onMouseOver={handleSubmenu} className="relative px-6 sm:px-[72px] lg:px-20 pt-[72px] pb-40 md:py-10 lg:py-40 lg:pb-32 2xl:px-40 grid lg:grid-cols-2 gap-12 text-black font-Poppins">
       <div>
         <h2 className="text-[28px] font-semibold leading-[42px] mb-8 lg:text-[40px] lg:leading-[60px]  ">
           Hire smarter, <br></br> not harder

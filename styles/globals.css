@@ -50,7 +50,7 @@ a {
 }
 
 /* Recruiment section images */
-.bg-img-dashboard {
+/* .bg-img-dashboard {
   background: url("/images/dashboard_1.webp");
   background-size: contain;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@ a {
   background-position: left center;
   max-width: 100%;
   width: 100%;
-}
+} */
 
 /* For gradient backgrounds */
 .gradient {

@@ -61,7 +61,7 @@ const People = ({setShowUseDrop}) => {
   // }, [index]);
   return (
     <>
-      <div onMouseOver={handleSubmenu} className="section-center h-[570px] sm:h-[450px] md:h-[380px] lg:h-[400px] xl:h-[500px] overflow-hidden font-Poppins sm:mx-10 md:mx-[72px] md:mt-[174px]  lg:mx-0  lg:mt-10">
+      <div onMouseOver={handleSubmenu} className="section-center h-[600px] sm:h-[500px] md:h-[400px] lg:h-[400px] xl:h-[500px] overflow-hidden font-Poppins sm:mx-10 md:mx-[72px] md:mt-[174px]  lg:mx-0  lg:mt-10">
         <h1 className="font-semibold absolute left-1/2 transform translate-x-[-50%] text-center w-full  lg:mt-16 text-[28px] mt-10 md:mt-0 leadding-[42px] lg:text-[40px] ">
           People sweet words
         </h1>
@@ -97,14 +97,16 @@ const People = ({setShowUseDrop}) => {
                   </h4>
                 </div>
               </div>
-              <div className="text-start  py-11 px-6 lg:pl-[76px] lg:pr-[67px] lg:pt-[74px] lg:pb-[100px] xl:pb-[150px]  lg:shadow">
-                <p className="font-medium text-[20px] lg:text-[20px] leading-[30px]  ">
+              <div className="text-start  py-11 px-6 lg:pl-[76px] lg:pr-[67px] lg:pt-[74px] lg:pb-[80px] lg:shadow rounded-tr-[20px] rounded-br-[20px]">
+                <p className="font-medium text-[20px] lg:text-[20px] leading-[30px] pb-4">
                   {words}
                 </p>
-              </div>
-              <div className="hidden absolute right-10 bottom-4 text-start  lg:flex flex-col">
-                <p className=" text-[#19191966] font-semibold">{post}</p>
+              <div className="hidden bottom-4 lg:flex items-end flex-col">
+                <div>
+                <p className=" text-[#19191966] text-xl font-semibold">{post}</p>
                 <h4 className="font-semibold italic">{name}</h4>
+                </div>
+              </div>
               </div>
             </article>
           );

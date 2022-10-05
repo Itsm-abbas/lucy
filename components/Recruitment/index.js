@@ -182,10 +182,15 @@ const Recruitment = ({ setShowUseDrop }) => {
 
         {/* 2nd slide (Dashboard) -- start */}
         {dashboard && (
-          <div className=" bg-img-dashboard h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative">
-            <div className="absolute bottom-12 sm:bottom-4 md:bottom-16 xl:bottom-20 left-[calc(100%-85%)]">
+          <div className=" h-72  md:h-[70vh] lg:h-[80vh] xl:h-[598px] w-full relative">
+            <Image
+            layout="fill"
+            src={"/images/dashboard_1.svg"}
+            alt="dashbaord"
+            />
+            <div className="absolute bottom-12 sm:bottom-4 md:bottom-16 xl:bottom-10 left-[calc(100%-85%)]">
               <img
-                className="w-48 h-full md:w-80 lg:w-[410px] xl:w-[480px] shadow-sm"
+                className="w-48 h-full md:w-80 lg:w-[410px] xl:w-[669px] shadow-sm"
                 src={"/images/dashboard_2.svg"}
                 alt="dashbaord_2"
               />
@@ -203,12 +208,19 @@ const Recruitment = ({ setShowUseDrop }) => {
 
         {/* 3rd slide (Chat) -- start */}
         {chat && (
-          <div className="bg-img-chat h-72  md:h-[70vh] lg:h-[80vh] xl:h-screen w-full relative rounded-2xl border-black border-l-4 border-t-4 border-r-4 md:border-t-8 md:border-r-8 rounded-br-none rounded-bl-none md:border-l-8 border-solid">
-            <div className="absolute -right-10  md:top-24 md:-right-28 xl:-top-10 xl:-right-72 ">
+          // rounded-2xl border-black border-l-4 border-t-4 border-r-4 md:border-t-8 md:border-r-8 rounded-br-none rounded-bl-none md:border-l-8 border-solid
+          <div className="bg-img-chat h-72  md:h-[70vh] lg:h-[93vh] xl:h-[698px] w-full relative ">
+             <Image
+            layout="fill"
+            src={"/images/chat-1.svg"}
+            alt="chat"
+
+            />
+            <div className="absolute top-10 sm:top-0 -right-4  md:top-0 md:-right-14 lg:-top-16 xl:-top-10 xl:-right-60 ">
               <img
-                className="w-52 h-72  md:w-[450px] md:h-[550px] lg:flex lg:w-[450px] lg:h-[550px] xl:w-[500px] xl:h-full"
+                className="w-40 sm:w-52   md:w-[280px] h-full lg:flex lg:w-[400px] lg:h-[590px] xl:w-[500px] xl:h-full"
                 src={"/images/chat-2.webp"}
-                alt="dashbaord_2"
+                alt="chat_2"
               />
             </div>
           </div>
@@ -222,7 +234,7 @@ const Recruitment = ({ setShowUseDrop }) => {
         className="pt-40 grid lg:grid-cols-2 relative bg-[#F2EDE4] px-4 md:px-16 lg:px-28 xl:px-[240px] xl:pt-[302px] font-Poppins font-semibold overflow-hidden"
       >
         {/* gradient */}
-        <div className="gradient h-96  hidden lg:block -right-96 rounded-full  bottom-0 lg:w-[31rem] "></div>
+        <div className="gradient h-96  hidden lg:block -right-96 rounded-full  bottom-0 lg:w-[31rem] xl:w-[51rem] "></div>
         <div className="gradient5 absolute h-[21rem]  hidden lg:block right-20 top-0 transform rotate-90    lg:w-[12rem] "></div>
         {/* gradient */}
         <div className="pb-20 px-7 sm:px-12 lg:px-0">

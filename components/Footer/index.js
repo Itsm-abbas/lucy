@@ -17,8 +17,8 @@ const Footer = ({setShowUseDrop}) => {
     }
   };
   const languages = [
-    { id: 1, name: "English" },
-    { id: 2, name: "Chinese" },
+    { id: 1, name: "English", link:"https://lucy.tw" },
+    { id: 2, name: "Chinese" , link:"https://hq.lucy.tw"},
   ];
   // Selected value stored in selected state
   const [selected, setSelected] = useState(languages[0]);
@@ -130,13 +130,15 @@ const Footer = ({setShowUseDrop}) => {
                         >
                           {({ selected }) => (
                             <>
+                              <Link href={language.link}>
                               <span
-                                className={`block truncate group-hover:font-semibold ${
+                                className={`cursor-pointer block truncate group-hover:font-semibold ${
                                   selected ? "font-medium" : "font-normal"
                                 }`}
                               >
                                 {language.name}
                               </span>
+                              </Link>
                               {selected ? (
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-[#A3A3A3]"></span>
                               ) : null}

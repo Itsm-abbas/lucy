@@ -59,7 +59,7 @@ const Main = ({ setShowUseDrop }) => {
       {/* **** */}
       <div className="grid overflow-hidden lg:grid-cols-5 gap-12 md:gap-20 py-20 lg:py-28 2xl:pl-40 font-Poppins">
         <div className="pr-8 md:pr-0 md:col-span-3">
-          <p className="text-[28px] pl-10 sm:pl-14 md:pl-16 sm:text-[32px] max-w-sm sm:max-w-xl lg:max-w-6xl   leading-[42px] sm:leading-[48px] md:text-[32px] lg:text-[40px] md:leading-[60px] text-[#191919] font-semibold ">
+          <p className="text-[28px] pl-10 sm:pl-14 md:pl-16 sm:text-[32px] max-w-sm sm:max-w-xl lg:max-w-6xl   leading-[42px] sm:leading-[48px] md:text-[32px] lg:text-[40px]  text-[#191919] font-semibold ">
             Trusted by forward-thinking <br/> companies who value ease of use over
             complexity
           </p>
