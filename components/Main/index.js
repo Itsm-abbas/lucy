@@ -32,7 +32,7 @@ const Main = ({ setShowUseDrop }) => {
           <div className=" md:relative w-[600px] h-[22rem]  md:w-[1200px] lg:w-[800px] md:h-[22rem] lg:h-[24rem] ">
             {/* <div class="relative flex items-center justify-center h-full w-[44rem] mb-12 overflow-hidden"> */}
             <video
-              playsinline
+            playsInline
               loop
               autoPlay
               muted
