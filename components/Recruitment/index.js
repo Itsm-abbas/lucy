@@ -188,16 +188,16 @@ const Recruitment = ({ setShowUseDrop }) => {
             src={"/images/dashboard_1.svg"}
             alt="dashbaord"
             />
-            <div className="absolute bottom-12 sm:bottom-4 md:bottom-16 xl:bottom-10 left-[calc(100%-85%)]">
+            <div className="absolute bottom-12 sm:bottom-4 md:bottom-16 xl:bottom-10 2xl:bottom-0 left-[calc(100%-85%)]">
               <img
-                className="w-48 h-full md:w-80 lg:w-[410px] xl:w-[669px] shadow-sm"
+                className="w-48 h-full md:w-80 lg:w-[410px] xl:w-[669px] 2xl:w-[769px] shadow-sm"
                 src={"/images/dashboard_2.svg"}
                 alt="dashbaord_2"
               />
             </div>
-            <div className="absolute top-16 sm:top-0 -right-8 md:top-20 lg:-top-0 lg:-bottom-20 xl:top-12 md:-right-28 xl:-right-60">
+            <div className="absolute top-16 sm:top-0 -right-8 md:top-20 lg:-top-0 lg:-bottom-20 xl:top-12 md:-right-28 xl:-right-60 2xl:-right-12">
               <img
-                className="w-full h-44 sm:h-72 md:w-60 md:h-96 lg:w-72 lg:h-[600px] xl:h-[550px] xl:w-[370px] "
+                className="w-full h-44 sm:h-72 md:w-60 md:h-96 lg:w-72 lg:h-[600px] xl:h-[550px] 2xl:h-[650px] xl:w-[370px]"
                 src={"/images/dashboard_3.webp"}
                 alt="dashbaord_2"
               />
@@ -254,7 +254,7 @@ const Recruitment = ({ setShowUseDrop }) => {
           <div className="absolute -left-16 bottom-0 md:-left-0 md:static h-full flex">
             <img
               className="z-10 w-[270px] h-[290px]  md:w-[335px] md:h-[360px] lg:absolute lg:bottom-0"
-              src={"/images/mbl-img.png"}
+              src={"/images/mbl-img.webp"}
               alt="mbl-img"
             />
            

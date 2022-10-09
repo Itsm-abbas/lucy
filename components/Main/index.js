@@ -32,10 +32,11 @@ const Main = ({ setShowUseDrop }) => {
           <div className=" md:relative w-[600px] h-[22rem]  md:w-[1200px] lg:w-[800px] md:h-[22rem] lg:h-[24rem] ">
             {/* <div class="relative flex items-center justify-center h-full w-[44rem] mb-12 overflow-hidden"> */}
             <video
+              playsinline
               loop
               autoPlay
               muted
-              class=" absolute  ml-36 sm:ml-60 md:ml-0 bottom-0 md:-right-40 lg:-right-36 z-30 w-full min-w-full  max-w-6xl"
+              class="absolute ml-36 sm:ml-60 md:ml-0 bottom-0 md:-right-40 lg:-right-36 z-30 w-full min-w-full max-w-6xl"
             >
               <source
                 src="/videos/Lucy hero section transparent.webm"
